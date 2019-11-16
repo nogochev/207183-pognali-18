@@ -61,7 +61,8 @@
       </section>
       <!-- <b class="intro">В путешествие с крутыми попутчиками!</b> -->
 
-      <sectin class="user-nav">
+      <section class="user-nav">
+        <h2 class="visually-hidden">Контактные данные и авторизация</h2>
         <ul class="user-nav__list contacts-list">
           <li class="contacts-list__item">
             <a class="contacts-list__link contacts-list__link--tel-light" href="tel:+78005558628" aria-label="Телефон для связи">8 800 555-86-28</a>
@@ -103,7 +104,7 @@
       </section>
 
       <section class="directions">
-        <h2 class="directions__title"></h2>
+        <h2 class="directions__title">Направления</h2>
         <p class="directions__description">
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
@@ -156,44 +157,45 @@
         <p class="companions__text companions__text--bold">Теперь можно легко найти единомышленников!</p>
         <ul class="companions__list">
           <li class="companions__item">
-            <img src="https://via.placeholder.com/270x270" width="270" height="270" alt="Татьяна Фирсова фото">
+            <img class="companions__user-photo" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Татьяна Фирсова фото">
             <div class="companions__level-count">
               <span class="companions__count">99</span>
               <span class="companions__level">level</span>
             </div>
             <ul class="companions__countries">
               <li class="companions__country">
-                <img src="https://via.placeholder.com/35x24" alt="Страна">
+                <img src="https://via.placeholder.com/35x24" alt="Шри-ланка">
               </li>
               <li class="companions__country">
-                <img src="https://via.placeholder.com/35x24" alt="страна">
+                <img src="https://via.placeholder.com/35x24" alt="Таиланд">
               </li>
               <li class="companions__country">
-                <img src="https://via.placeholder.com/35x24" alt="страна">
+                <img src="https://via.placeholder.com/35x24" alt="Сейшелы">
               </li>
             </ul>
             <div class="companions__info-wrapper">
+              <span class="companions__indicator indicator">Онлайн</span>
               <p class="companions__name">Татьяна Фирсова</p>
               <p class="companions__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               <ul class="companions__transport-list">
                 <li class="companions__transport-item">
-                  <button class="companions__button companions__button--on companions__button--plane" type="button">Самолёт</button>
+                  <span class="companions__transport-icon transport-icon transport-icon--on">Самолёт</span>
                 </li>
                 <li class="companions__transport-item">
-                  <button class="companions__button companions__button--off companions__button--bus" type="button">Автобус</button>
+                  <span class="companions__transport-icon transport-icon transport-icon--off">Автобус</span>
                 </li>
                 <li class="companions__transport-item">
-                  <button class="companions__button companions__button--off companions__button--bicyle" type="button">Велосипед</button>
+                  <span class="companions__transport-icon transport-icon transport-icon--off">Велосипед</span>
                 </li>
                 <li class="companions__transport-item">
-                  <button class="companions__button companions__button--off companions__button--walking" type="button">Пешком</button>
+                  <span class="companions__transport-icon transport-icon transport-icon--off">Пешком</span>
                 </li>
               </ul>
             </div>
           </li>
 
           <li class="companions__item">
-            <img src="https://via.placeholder.com/270x270" width="270" height="270" alt="Петя Демин фото">
+            <img class="companions__user-photo" src="https://via.placeholder.com/270x270" width="270" height="270" alt="Петя Демин фото">
             <div class="companions__level-count">
               <span class="companions__count">80</span>
               <span class="companions__level">level</span>
@@ -207,20 +209,21 @@
               </li>
             </ul>
             <div class="companions__info-wrapper">
+              <span class="companions__indicator indicator indicator--offline">Оффлайн</span>
               <p class="companions__name">Петя Демин</p>
               <p class="companions__tags">#бургер #бар #футбол #концерт #крафт</p>
               <ul class="companions__transport-list">
                 <li class="companions__transport-item">
-                  <button class="companions__button companions__button--on companions__button--plane" type="button">Самолёт</button>
+                  <span class="companions__transport-icon transport-icon transport-icon--on">Самолёт</span>
                 </li>
                 <li class="companions__transport-item">
-                  <button class="companions__button companions__button--off companions__button--bus" type="button">Автобус</button>
+                  <span class="companions__transport-icon transport-icon transport-icon--on">Автобус</span>
                 </li>
                 <li class="companions__transport-item">
-                  <button class="companions__button companions__button--on companions__button--bicyle" type="button">Велосипед</button>
+                  <span class="companions__transport-icon transport-icon transport-icon--off">Велосипед</span>
                 </li>
                 <li class="companions__transport-item">
-                  <button class="companions__button companions__button--on companions__button--walking" type="button">Пешком</button>
+                  <span class="companions__transport-icon transport-icon transport-icon--on">Пешком</span>
                 </li>
               </ul>
             </div>
@@ -298,7 +301,7 @@
       </section>
     </main>
 
-    <footer class="page__footer">
+    <footer class="page-footer">
       <section class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-footer social-list">
