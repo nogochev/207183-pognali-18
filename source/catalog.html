@@ -58,17 +58,147 @@
       <h1 class="page-title">Попутчики</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
+        <section class="filter__countries">
+          <h3 class="fllter__title">Фильтрация по странам</h3>
+          <button class="filter__countries-button filter__countries-button--show" type="button">Показать/Скрыть</button>
+          <div class="filter__countries-wrapper">
+            <ul class="filter__land-list">
+              <li class="filter__land-item filter__land-item--current">
+                <button class="filter__land-button">Европа</button>
+              </li>
+              <li class="filter__land-item">
+                <button class="filter__land-button">Азия</button>
+              </li>
+              <li class="filter__land-item">
+                <button class="filter__land-button">Америка</button>
+              </li>
+              <li class="filter__land-item">
+                <button class="filter__land-button">Острова</button>
+              </li>
+            </ul>
+            <ul class="filter__letter-list">
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">А</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Б</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">В</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Г</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Д</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Е</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">З</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">И</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">К</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Л</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">М</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Н</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">О</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">П</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Р</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">С</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Т</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">У</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Ф</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Х</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Ч</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Ш</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Э</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Ю</button>
+              </li>
+              <li class="filter__letter-item">
+                <button class="filter__letter-button" type="button">Я</button>
+              </li>
+            </ul>
+
+            <ul class="filter__countries-list">
+              <li class="filter__countries-item">
+                <a class="filter__countries-link" href="">Афганистан</a>
+              </li>
+              <li class="filter__countries-item">
+                <a class="filter__countries-link" href="">Албания</a>
+              </li>
+              <li class="filter__countries-item">
+                <a class="filter__countries-link" href="">Алжир</a>
+              </li>
+              <li class="filter__countries-item">
+                <a class="filter__countries-link" href="">Андорра</a>
+              </li>
+              <li class="filter__countries-item">
+                <a class="filter__countries-link" href="">Аргентина</a>
+              </li>
+              <li class="filter__countries-item">
+                <a class="filter__countries-link" href="">Армения</a>
+              </li>
+              <li class="filter__countries-item">
+                <a class="filter__countries-link" href="">Австралия</a>
+              </li>
+              <li class="filter__countries-item">
+                <a class="filter__countries-link" href="">Австрия</a>
+              </li>
+              <li class="filter__countries-item">
+                <a class="filter__countries-link" href="">Азербайджан</a>
+              </li>
+            </ul>
+            <button class="filter__countries-button button" type="button">Свернуть</button>
+          </div>
+
+        </section>
+
         <div class="filter__form-wrapper">
           <form class="filter__form" action="https://echo.htmlacademy.ru" method="GET">
             <b class="filter__form-title">Подберите идеального попутчика</b>
             <fieldset class="filter__criterion">
               <legend class="filter__criterion-title">Хобби</legend>
-              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+              <button class="filter__criterion-button filter__criterion-button--close" type="button">Раскрыть/Скрыть</button>
             </fieldset>
 
             <fieldset class="filter__criterion">
               <legend class="filter__criterion-title">Музыка</legend>
-              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+              <button class="filter__criterion-button filter__criterion-button--close" type="button">Раскрыть/Скрыть</button>
               <ul class="filter__list filter__music">
                 <li class="filter__item">
                   <input class="filter__input" type="checkbox" name="hard-rock" id="hard-rock">
@@ -87,12 +217,12 @@
 
             <fieldset class="filter__criterion">
               <legend class="filter__criterion-title">Еда</legend>
-              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+              <button class="filter__criterion-button filter__criterion-button--close" type="button">Раскрыть/Скрыть</button>
             </fieldset>
 
             <fieldset class="filter__criterion">
               <legend class="filter__criterion-title">Транспорт</legend>
-              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+              <button class="filter__criterion-button filter__criterion-button--close" type="button">Раскрыть/Скрыть</button>
               <ul class="filter__transport-list">
                 <li class="filter__transport-item">
                   <button class="filter__transport-button" type="button">
@@ -119,7 +249,7 @@
 
             <fieldset class="filter__criterion">
               <legend class="filter__criterion-title">Левел</legend>
-              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+              <button class="filter__criterion-button filter__criterion-button--close" type="button">Раскрыть/Скрыть</button>
               <div class="filter__range range">
                 <div class="range__price-controls">
                   <label class="range__min-price"><input type="text" name="min-price" value="30"></label>
@@ -134,7 +264,7 @@
                 </div>
               </div>
             </fieldset>
-            <button class="filter__button button" type="submit">Показать</button>
+            <button clcofilter__countries-button button" type="submit">Показать</button>
           </form>
         </div>
       </section>
