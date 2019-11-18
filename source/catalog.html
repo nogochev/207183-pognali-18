@@ -56,6 +56,89 @@
 
     <main class="page-main">
       <h1 class="page-title">Попутчики</h1>
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр</h2>
+        <div class="filter__form-wrapper">
+          <form class="filter__form" action="https://echo.htmlacademy.ru" method="GET">
+            <b class="filter__form-title">Подберите идеального попутчика</b>
+            <fieldset class="filter__criterion">
+              <legend class="filter__criterion-title">Хобби</legend>
+              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+            </fieldset>
+
+            <fieldset class="filter__criterion">
+              <legend class="filter__criterion-title">Музыка</legend>
+              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+              <ul class="filter__list filter__music">
+                <li class="filter__item">
+                  <input class="filter__input" type="checkbox" name="hard-rock" id="hard-rock">
+                  <label class="filter__label" for="hard-rock">Тяжелый рок</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input" type="checkbox" name="russian-rap" id="russian-rap">
+                  <label class="filter__label" for="russian-rap">Русский рэп</label>
+                </li>
+                <li class="filter__item">
+                  <input class="filter__input" type="checkbox" name="eurodance" id="eurodance">
+                  <label class="filter__label" for="eurodance">Евроденс</label>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter__criterion">
+              <legend class="filter__criterion-title">Еда</legend>
+              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+            </fieldset>
+
+            <fieldset class="filter__criterion">
+              <legend class="filter__criterion-title">Транспорт</legend>
+              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+              <ul class="filter__transport-list">
+                <li class="filter__transport-item">
+                  <button class="filter__transport-button" type="button">
+                    <span class="filter__transport-icon transport-icon transport-icon--on">Самолёт</span>
+                  </button>
+                </li>
+                <li class="filter__transport-item">
+                  <button class="filter__transport-button" type="button">
+                    <span class="filter__transport-icon transport-icon transport-icon--off">Автобус</span>
+                  </button>
+                </li>
+                <li class="filter__transport-item">
+                  <button class="filter__transport-button" type="button">
+                    <span class="filter__transport-icon transport-icon transport-icon--off">Велосипед</span>
+                  </button>
+                </li>
+                <li class="filter__transport-item">
+                  <button class="filter__transport-button" type="button">
+                    <span class="filter__transport-icon transport-icon transport-icon--off">Пешком</span>
+                  </button>
+                </li>
+              </ul>
+            </fieldset>
+
+            <fieldset class="filter__criterion">
+              <legend class="filter__criterion-title">Левел</legend>
+              <button class="filter__button__expand" type="button">Свернуть/Развернуть</button>
+              <div class="filter__range range">
+                <div class="range__price-controls">
+                  <label class="range__min-price"><input type="text" name="min-price" value="30"></label>
+                  <label class="range__max-price"><input type="text" name="max-price" value="100"></label>
+                </div>
+                <div class="range__controls">
+                  <div class="range__scale">
+                    <div class="range__bar"></div>
+                  </div>
+                  <div class="range__toggle range__toggle-min"></div>
+                  <div class="range__toggle range__toggle-max"></div>
+                </div>
+              </div>
+            </fieldset>
+            <button class="filter__button button" type="submit">Показать</button>
+          </form>
+        </div>
+      </section>
+
       <section class="catalog">
         <h2 class="visually-hidden">Каталог попутчиков</h2>
         <ul class="catalog__list">
@@ -63,7 +146,7 @@
             <div class="catalog__image">
               <img class="catalog__user-photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Таня Фирсова фото">
               <div class="catalog__like">
-                <button class="catalog__like-button" type="button">Добавить в понравишееся</button>
+                <button class="catalog__like-button" type="button">Добавить в понравившееся</button>
                 <span class="catalog__like-count">1,5 м</span>
               </div>
             </div>
@@ -115,7 +198,7 @@
             <div class="catalog__image">
               <img class="catalog__user-photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Петя Демин фото">
               <div class="catalog__like">
-                <button class="catalog__like-button" type="button">Добавить в понравишееся</button>
+                <button class="catalog__like-button" type="button">Добавить в понравившееся</button>
                 <span class="catalog__like-count">150</span>
               </div>
             </div>
@@ -163,7 +246,7 @@
             <div class="catalog__image">
               <img class="catalog__user-photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Марк Смолов фото">
               <div class="catalog__like">
-                <button class="catalog__like-button" type="button">Добавить в понравишееся</button>
+                <button class="catalog__like-button" type="button">Добавить в понравившееся</button>
                 <span class="catalog__like-count">1700</span>
               </div>
             </div>
@@ -215,7 +298,7 @@
             <div class="catalog__image">
               <img class="catalog__user-photo" src="https://via.placeholder.com/70x70" width="70" height="70" alt="Лариса Роговая фото">
               <div class="catalog__like">
-                <button class="catalog__like-button" type="button">Добавить в понравишееся</button>
+                <button class="catalog__like-button" type="button">Добавить в понравившееся</button>
                 <span class="catalog__like-count">23</span>
               </div>
             </div>
