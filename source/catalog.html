@@ -185,7 +185,6 @@
             </ul>
             <button class="filter__countries-button button" type="button">Свернуть</button>
           </div>
-
         </section>
 
         <div class="filter__form-wrapper">
@@ -223,26 +222,22 @@
             <fieldset class="filter__criterion">
               <legend class="filter__criterion-title">Транспорт</legend>
               <button class="filter__criterion-button filter__criterion-button--close" type="button">Раскрыть/Скрыть</button>
-              <ul class="filter__transport-list">
-                <li class="filter__transport-item">
-                  <button class="filter__transport-button" type="button">
-                    <span class="filter__transport-icon transport-icon transport-icon--on">Самолёт</span>
-                  </button>
+              <ul class="filter__transport-list transport-list">
+                <li class="transport-list__item">
+                  <input class="transport-list__input" type="checkbox" value="plane" name="transport" id="transport-plane">
+                  <label class="transport-list__icon transport-list__icon--plane" for="transport-plane">Самолёт</label>
                 </li>
-                <li class="filter__transport-item">
-                  <button class="filter__transport-button" type="button">
-                    <span class="filter__transport-icon transport-icon transport-icon--off">Автобус</span>
-                  </button>
+                <li class="transport-list__item">
+                  <input class="transport-list__input" type="checkbox" value="bus" name="transport" id="transport-bus">
+                  <label class="transport-list__icon transport-list__icon--bus" for="transport-bus">Автобус</label>
                 </li>
-                <li class="filter__transport-item">
-                  <button class="filter__transport-button" type="button">
-                    <span class="filter__transport-icon transport-icon transport-icon--off">Велосипед</span>
-                  </button>
+                <li class="transport-list__item">
+                  <input class="transport-list__input" type="checkbox" value="bicycle" name="transport" id="transport-bicycle">
+                  <label class="transport-list__icon transport-list__icon--bicycle" for="transport-bicycle">Велосипед</label>
                 </li>
-                <li class="filter__transport-item">
-                  <button class="filter__transport-button" type="button">
-                    <span class="filter__transport-icon transport-icon transport-icon--off">Пешком</span>
-                  </button>
+                <li class="transport-list__item">
+                  <input class="transport-list__input" type="checkbox" value="afoot" name="transport" id="transport-afoot">
+                  <label class="transport-list__icon transport-list__icon--afoot" for="transport-afoot">Пешком</label>
                 </li>
               </ul>
             </fieldset>
@@ -264,7 +259,7 @@
                 </div>
               </div>
             </fieldset>
-            <button clcofilter__countries-button button" type="submit">Показать</button>
+            <button class="filter__countries-button button" type="submit">Показать</button>
           </form>
         </div>
       </section>
