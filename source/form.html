@@ -32,10 +32,10 @@
 
           <ul class="main-nav__list contacts-list">
             <li class="contacts-list__item">
-              <a class="contacts-list__link contacts-list__link--tel-dark" href="tel:+78005558628" aria-label="Телефон для связи">8 800 555-86-28</a>
+              <a class="contacts-list__link contacts-list__link--tel" href="tel:+78005558628" aria-label="Телефон для связи">8 800 555-86-28</a>
             </li>
             <li class="contacts-list__item">
-              <a class="contacts-list__link contacts-list__link--mail-dark" href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">mail@htmlacademy.ru</a>
+              <a class="contacts-list__link contacts-list__link--mail" href="mailto:mail@htmlacademy.ru" aria-label="Электронная почта">mail@htmlacademy.ru</a>
             </li>
           </ul>
 
@@ -56,10 +56,421 @@
 
     <main class="page-main">
       <h1 class="page-title">Направления</h1>
+      <form class="profile__user-form" action="https://echo.htmlacademy.ru" method="GET">
+        <section class="profile">
+          <h2 class="visually-hidden">Профиль</h2>
+          <img class="companions__user-photo" src="https://via.placeholder.com/100x100" width="100" height="100" alt="Татьяна Фирсова фото">
+          <div class="companions__level-count">
+            <span class="companions__count">99</span>
+            <span class="companions__level">level</span>
+          </div>
+          <input class="profile__input-photo" type="file" name="change-photo" id="change-photo">
+          <label class="profile__label" for="change-photo">Сменить фото</label>
+          <fieldset class="profile__fieldset">
+            <legend class="profile__fieldset-title">Тэги</legend>
+            <textarea class="profile__textarea" name="tags">#бургер #бар #футбол #концерт #крафт</textarea>
+          </fieldset>
+
+          <fieldset class="profile__fieldset">
+            <legend class="profile__fieldset-title">Транспорт</legend>
+            <ul class="profile__transport-list transport-list">
+              <li class="transport-list__item">
+                <input class="transport-list__input" type="checkbox" value="plane" name="transport" id="transport-plane">
+                <label class="transport-list__icon transport-list__icon--plane" for="transport-plane">Самолёт</label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__input" type="checkbox" value="bus" name="transport" id="transport-bus">
+                <label class="transport-list__icon transport-list__icon--bus" for="transport-bus">Автобус</label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__input" type="checkbox" value="bicycle" name="transport" id="transport-bicycle">
+                <label class="transport-list__icon transport-list__icon--bicycle" for="transport-bicycle">Велосипед</label>
+              </li>
+              <li class="transport-list__item">
+                <input class="transport-list__input" type="checkbox" value="afoot" name="transport" id="transport-afoot">
+                <label class="transport-list__icon transport-list__icon--afoot" for="transport-afoot">Пешком</label>
+              </li>
+            </ul>
+          </fieldset>
+        </section>
+
+        <section class="plans">
+          <h2 class="plans__title">Мои планы:</h2>
+          <ol class="plans__list">
+            <li class="plans__item">
+              <h3 class="plans__title">Франция, Италия</h3>
+              <p class="plans__companions">3 попутчика</p>
+              <p class="plans__date">26 мар — 29 мар</p>
+              <a class="plans__change" href="plans.html">Изменить</a>
+            </li>
+            <li class="plans__item">
+              <h3 class="plans__title">Таиланд, Индонезия</h3>
+              <p class="plans__companions">1 попутчик</p>
+              <p class="plans__date">1 июл — 15 июл</p>
+              <a class="plans__change" href="plans.html">Изменить</a>
+            </li>
+          </ol>
+        </section>
+
+        <section class="add-plan">
+          <h2 class="add-plan__title">Добавить план:</h2>
+          <fieldset class="add-plan__step step-one">
+            <legend class="add-plan__step-title">Шаг 1.<br>Даты пребывания</legend>
+            <p class="add-plan__step-description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку и ее предполагаемую длительность.</p>
+            <div class="add-plan__step-parametr">
+              <button class="add-plan__button-reduce" type="button">уменьшить</button>
+              <label class="add-plan__label-number" for="number-persons">Ищу попутчиков: <span class="add-plan__step-persons">чел.</span></label>
+              <input class="add-plan__input add-plan__input--number" type="number" name="number-persons" id="number-persons" placeholder="2">
+              <button class="add-plan__button-increase" type="button">увеличить</button>
+            </div>
+
+            <div class="add-plan__step-parametr">
+              <button class="add-plan__button-reduce" type="button">уменьшить</button>
+              <label class="add-plan__label-number" for="number-days">Длительность: <span class="add-plan__label-value">дн.</span></label>
+              <input class="add-plan__input add-plan__input--number" type="number" name="number-days" id="number-days" placeholder="2">
+              <button class="add-plan__button-increase" type="button">увеличить</button>
+            </div>
+
+            <div class="add-plan__step-parametr">
+              <input class="add-plan__checkbox-children" type="checkbox" name="children" id="add-plan__label-children" checked>
+              <label class="add-plan__label-children" for="add-plan__label-children">Можно с детьми</label>
+            </div>
+
+            <table class="add-plan__calendar">
+              <caption class="add-plan__caption">
+                <button class="add-plan__button-month add-plan__button-month--prev">Предыдущий месяц</button>
+                Март 2019
+                <button class="add-plan__button-month add-plan__button-month--next">Следующий месяц</button>
+              </caption>
+              <tr class="add-plan__calendar-row">
+                <th class="add-plan__calendar-cell add-plan__calendar-cell--head">п</th>
+                <th class="add-plan__calendar-cell add-plan__calendar-cell--head">в</th>
+                <th class="add-plan__calendar-cell add-plan__calendar-cell--head">с</th>
+                <th class="add-plan__calendar-cell add-plan__calendar-cell--head">ч</th>
+                <th class="add-plan__calendar-cell add-plan__calendar-cell--head">п</th>
+                <th class="add-plan__calendar-cell add-plan__calendar-cell--head">с</th>
+                <th class="add-plan__calendar-cell add-plan__calendar-cell--head">в</th>
+              </tr>
+
+              <tr class="add-plan__calendar-row">
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="23">23</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="24">24</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="25">25</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="26">26</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="27">27</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="28">28</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="1">1</label>
+                </td>
+              </tr>
+
+              <tr class="add-plan__calendar-row">
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="2">2</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="3">3</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="4">4</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="5">5</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="6">6</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="7">7</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="8">8</label>
+                </td>
+              </tr>
+
+              <tr class="add-plan__calendar-row">
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="9">9</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="10">10</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="11">11</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="12">12</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="13">13</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="14">14</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="15">15</label>
+                </td>
+              </tr>
+
+              <tr class="add-plan__calendar-row">
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="16">16</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="17">17</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="18">18</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="19">19</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="20">20</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="21">21</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="22">22</label>
+                </td>
+              </tr>
+
+              <tr class="add-plan__calendar-row">
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="23">23</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="23">23</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="24">24</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="25">25</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="26">26</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="27">27</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="28">28</label>
+                </td>
+              </tr>
+
+              <tr class="add-plan__calendar-row">
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="30">30</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="31">31</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="1">1</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="2">2</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="3">3</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="4">4</label>
+                </td>
+                <td class="add-plan__calendar-cell">
+                  <label><input class="add-plan__calendar-checkbox" type="checkbox" name="calendar-number" value="5">5</label>
+                </td>
+              </tr>
+            </table>
+            <a class="add-plan__step-next" href="">Следующий шаг</a>
+          </fieldset>
+
+          <fieldset class="add-plan__step step-two">
+            <legend class="add-plan__step-title">Шаг 2.<br>Маршрут</legend>
+            <p class="add-plan__step-description">Укажите страны, которые вы хотели по посетить. Это может быть одна или сразу несколько.</p>
+            <div class="add-plan__country">
+              <label class="add-plan__label-country">Босния и герцеговина
+                <input class="add-plan__input-country" type="button" name="country" value="Босния и герцеговина">
+                <img class="add-plan__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Босния и герцеговина">
+              </label>
+              <button class="add-plan__delete-country" type="button">Удалить</button>
+            </div>
+
+            <div class="add-plan__country">
+              <label class="add-plan__label-country">Чехия
+                <input class="add-plan__input-country" type="button" name="country" value="Чехия">
+                <img class="add-plan__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехия">
+              </label>
+              <button class="add-plan__delete-country" type="button">Удалить</button>
+            </div>
+
+            <div class="add-plan__country">
+              <label class="add-plan__label-country">Выберете страну
+                <input class="add-plan__input-country" type="button" name="country" value="Выберете страну">
+              </label>
+              <button class="add-plan__delete-country" type="button">Удалить</button>
+            </div>
+
+            <div class="add-plan__country">
+              <label class="add-plan__label-country">Добавить страну
+                <input class="add-plan__input-country" type="button" name="country" value="Добавить страну">
+              </label>
+            </div>
+            <a class="add-plan__step-next button" href="">Следующий шаг</a>
+            <a class="add-plan__step-prev button" href="">На шаг назад</a>
+
+            <div class="add-plan__countries">
+              <div class="add-plan__countries-heading">
+                <h3 class="add-plan__countries-title">Выберете страну</h3>
+                <button class="add-plan__countries-close" type="button">Закрыть</button>
+              </div>
+              <ul class="add-plan__letter-list">
+                <li class="add-plan__letter-item add-plan__letter-item--active">
+                  <button class="add-plan__letter-button" type="button">А</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Б</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">В</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Г</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Д</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Е</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">З</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">И</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">К</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Л</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">М</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Н</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">О</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">П</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Р</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">С</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Т</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">У</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Ф</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Х</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Ч</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Ш</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Э</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Ю</button>
+                </li>
+                <li class="add-plan__letter-item add-plan__letter-item">
+                  <button class="add-plan__letter-button" type="button">Я</button>
+                </li>
+              </ul>
+
+              <ul class="add-plan__countries-list">
+                <li class="add-plan__countries-item">
+                  <a class="add-plan__countries-link" href="">Афганистан</a>
+                </li>
+                <li class="add-plan__countries-item">
+                  <a class="add-plan__countries-link" href="">Албания</a>
+                </li>
+                <li class="add-plan__countries-item">
+                  <a class="add-plan__countries-link" href="">Алгерия</a>
+                </li>
+                <li class="add-plan__countries-item">
+                  <a class="add-plan__countries-link" href="">Андорра</a>
+                </li>
+                <li class="add-plan__countries-item">
+                  <a class="add-plan__countries-link" href="">Аргентина</a>
+                </li>
+                <li class="add-plan__countries-item">
+                  <a class="add-plan__countries-link" href="">Армения</a>
+                </li>
+                <li class="add-plan__countries-item">
+                  <a class="add-plan__countries-link" href="">Австралия</a>
+                </li>
+                <li class="add-plan__countries-item">
+                  <a class="add-plan__countries-link" href="">Австрия</a>
+                </li>
+                <li class="add-plan__countries-item">
+                  <a class="add-plan__countries-link" href="">Азербайджан</a>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+
+          <fieldset class="add-plan__step step-three">
+            <legend class="add-plan__step-title">Шаг 3.<br>Развлечения</legend>
+            <p class="add-plan__step-description">Наконец, расскажите о своих планах времяпровождения.
+              Можно писать в свободной форме и ставить тэги.</p>
+            <label class="add-plan__label-textarea">
+              Босния и Герцеговина
+              <img class="add-plan__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Босния и Герцеговина">
+              <textarea class="add-plan__textarea" placeholder="План действий"></textarea>
+            </label>
+            <label class="add-plan__label-textarea">
+              Чехия
+              <img class="add-plan__country-flag" src="https://via.placeholder.com/35x24" width="35" height="24" alt="Флаг Чехия">
+              <textarea class="add-plan__textarea" placeholder="План действий">Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            </label>
+            <button class="add-plan__form-button button" type="submit">Отправить</button>
+            <a class="add-plan__step-prev button" href="">На шаг назад</a>
+          </fieldset>
+        </section>
+      </form>
     </main>
 
     <footer class="page-footer">
-      <section class="social">
+      <div class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="social-footer social-list">
             <li class="social-list__item social-list__item--footer">
@@ -72,7 +483,7 @@
               <a class="social-list__link social-list__link--instagram-footer" href="#">Инстаграм</a>
             </li>
           </ul>
-      </section>
+      </div>
 
       <div class="copyright">
         <p class="copyright__text">Разработано</p>
