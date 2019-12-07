@@ -1,0 +1,35 @@
+.transport-list {
+  display: flex;
+}
+
+.transport-list__item {
+  font-size: 0;
+}
+
+.transport-list__icon {
+  display: block;
+}
+
+.transport-list__icon--plane {
+  width: 19px;
+  height: 21px;
+  background: url("../../img/plane.svg") no-repeat 0 0;
+}
+
+.transport-list__icon--bus {
+  width: 17px;
+  height: 21px;
+  background: url("../../img/bus.svg") no-repeat 0 0;
+}
+
+.transport-list__icon--bicyle {
+  width: 24px;
+  height: 21px;
+  background: url("../../img/bike.svg") no-repeat 0 0;
+}
+
+.transport-list__icon--walk {
+  width: 20px;
+  height: 21px;
+  background: url("../../img/run.svg") no-repeat 0 0;
+}

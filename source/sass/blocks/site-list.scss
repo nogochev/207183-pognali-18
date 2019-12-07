@@ -1,0 +1,15 @@
+.site-list__link {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #192144;
+  text-transform: uppercase;
+
+  &:hover {
+    color: #ffd74b;
+  }
+
+  &:active {
+    color: rgba(#ffd74b, 0.3%);
+  }
+}

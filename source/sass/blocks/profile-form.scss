@@ -1,0 +1,211 @@
+.profile {
+  padding-top: 23px;
+  padding-bottom: 33px;
+  background-color: #edeff6;
+  color: #161c35;
+}
+
+.profile__container {
+  padding: 0 25px;
+}
+
+.profile__count {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.profile__level {
+  color: #444444;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22.17px;
+}
+
+.profile__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.profile__fieldset-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.profile__textarea {
+  background-color: #edeff6;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.plans {
+  padding-top: 29px;
+  padding-bottom: 56px;
+  background-color: #dfe3f0;
+  color: #1d2e5b;
+}
+
+.plans__container {
+  padding: 0 25px;
+}
+
+.plans__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.plans__countries {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.plans__profile {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.plans__date {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.plans__change {
+  color: rgba(#000000, 0.3%);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.add-plan {
+  padding-top: 30px;
+  padding-bottom: 44px;
+  background-color: #d4d9eb;
+  color: #1d2e5b;
+}
+
+.add-plan__container {
+  padding: 0 25px;
+}
+
+.add-plan__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.add-plan__step {
+  padding-top: 24px;
+  padding-bottom: 17px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.add-plan__step-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.add-plan__step-description {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.add-plan__label-number {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2.15px;
+}
+
+.add-plan__step-persons {
+  color: rgba(#1d2e5b, 0.3%);
+}
+
+.add-plan__label-children {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.add-plan__caption {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.add-plan__calendar-cell {
+  color: rgba(#444444, 0.3%);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.add-plan__calendar-cell--head {
+  color: #444444;
+}
+
+.add-plan__calendar-cell--day-off {
+  color: #ff5c23;
+}
+
+.add-plan__label-country {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.add-plan__countries-title {
+  color: #ffffff;
+  background-color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+
+.add-plan__letter-button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  background-color: transparent;
+}
+
+.add-plan__countries-link {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.add-plan__label-textarea {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 18px;
+}

@@ -1,0 +1,87 @@
+.filter {
+  background-color: #edeff6;
+}
+
+.filter__countries {
+  background-color: #e2e5f2;
+}
+
+.filter__container {
+  padding: 0 25px;
+  padding-top: 20px;
+  padding-bottom: 27px;
+}
+
+.fllter__title {
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter__land-button {
+  color: rgba(#192144, 0.3%);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--current {
+    color: #192144;
+  }
+}
+
+.filter__letter-button {
+  color: #1d2e5b;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.filter__countries-link {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.filter__countries-button {
+  margin-top: 40px;
+  padding: 6px 69px 4px 108px;
+  background-color: #d6daed;
+}
+
+.filter__form {
+  padding-bottom: 22px;
+  color: #1d2e5b;
+  background-color: #ffd74b;
+}
+
+.filter__form-title {
+  color: #1d2e5b;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22.49px;
+}
+
+.filter__criterion-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.filter__label {
+  color: #444444;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+}
