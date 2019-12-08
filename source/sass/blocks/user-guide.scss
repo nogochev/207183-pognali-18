@@ -1,0 +1,36 @@
+.user-guide {
+  background-color: #192144;
+}
+
+.user-guide__container {
+  padding: 0 25px;
+  padding-top: 50px;
+  padding-bottom: 39px;
+}
+
+.user-guide__list {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #161c35;
+}
+
+.user-guide__number {
+  color: #ffffff;
+}
+
+.user-guide__item:nth-child(1) {
+  background-color: #ff8d30;
+}
+
+.user-guide__item:nth-child(2) {
+  background-color: #ffa530;
+}
+
+.user-guide__item:nth-child(3) {
+  background-color: #ffbd30;
+}
+
+.user-guide__item:nth-child(4) {
+  background-color: #ffd74b;
+}

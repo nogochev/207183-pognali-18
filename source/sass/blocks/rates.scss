@@ -1,0 +1,41 @@
+.rates {
+  background-color: #edeff6;
+}
+
+.rates__container {
+  padding: 0 25px;
+  padding-top: 52px;
+  padding-bottom: 38px;
+}
+
+.rates__title {
+  color: #ff8d30;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.rates__feature,
+.rates__price {
+  display: block;
+  color: #444444;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+}
+
+.rates__business {
+  background-color: #ffffff;
+}
+
+.rates__business-show,
+.rates__business-close {
+  color: #192144;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.rates__business-close {
+  text-transform: uppercase;
+}
