@@ -1,0 +1,253 @@
+.companions-catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.companions-catalog__item {
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.companions-catalog__show-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 19px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #1d2e5b;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.companions-catalog__show-more-text {
+  position: relative;
+  padding-left: 31px;
+  letter-spacing: 0.2px;
+}
+
+.companions-catalog__show-more-icon {
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  fill: #1d2e5b;
+}
+
+.companions-catalog__pagination {
+  display: flex;
+  margin-bottom: 76px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.companions-catalog__pagination-list {
+  display: none;
+  @include list-reset;
+}
+
+.companions-catalog__pagination-link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  user-select: none;
+  color: #161c35;
+  border-radius: 50px;
+
+  &:hover {
+    color: rgba(#161c35, 0.6);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(77, 144, 254, 0.5);
+  }
+
+  &:active {
+    color: rgba(#161c35, 1);
+    background: #ffd74b;
+  }
+
+  &--current {
+    background: #ffd74b;
+
+    &:hover {
+      color: rgba(#161c35, 1);
+    }
+
+    &:active {
+      color: rgba(#161c35, 1);
+    }
+  }
+}
+
+.companions-catalog__controls-container {
+  position: relative;
+  display: flex;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 135px;
+    width: 1px;
+    height: 100%;
+    background-color: #edeff6;
+  }
+}
+
+.companions-catalog__pagination-button {
+  position: relative;
+  width: 135px;
+  min-height: 50px;
+  padding: 0;
+  font-size: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    border: 10px solid transparent;
+  }
+
+  &--back::before {
+    left: 53px;
+    border-right-color: #192144;
+  }
+
+  &--next::before {
+    left: 63px;
+    border-left-color: #192144;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .companions-catalog__item {
+    margin-bottom: 40px;
+  }
+
+  .companions-catalog__show-more {
+    margin-top: 46px;
+    margin-bottom: 47px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .companions-catalog__show-more-text {
+    padding-left: 42px;
+  }
+
+  .companions-catalog__show-more-icon {
+    top: -1px;
+    left: -8px;
+    width: 27px;
+    height: 27px;
+  }
+
+  .companions-catalog__pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 122px;
+    padding: 25px 28px 25px 28px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+
+  .companions-catalog__pagination-list {
+    display: flex;
+    @include list-reset;
+  }
+
+  .companions-catalog__controls-container {
+    position: relative;
+    margin-right: -22px;
+
+    &::before {
+      width: 0;
+      height: 0;
+    }
+  }
+
+  .companions-catalog__pagination-button {
+    position: relative;
+    width: 25px;
+    margin: 0px 14px;
+    padding: 0;
+    font-size: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      border: 10px solid transparent;
+    }
+
+    &--back::before {
+      left: 0;
+      border-right-color: #192144;
+    }
+
+    &--next::before {
+      left: 0;
+      border-left-color: #192144;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .companions-catalog__item {
+    margin-bottom: 30px;
+  }
+
+  .companions-catalog__show-more {
+    margin-top: 66px;
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .companions-catalog__show-more-text {
+    padding-right: 65px;
+  }
+
+  .companions-catalog__show-more-icon {
+    top: -1px;
+    left: -8px;
+    width: 27px;
+    height: 27px;
+  }
+
+  .companions-catalog__pagination {
+    margin-bottom: 137px;
+  }
+
+  .companions-catalog__controls-container {
+    margin-right: -13px;
+  }
+}

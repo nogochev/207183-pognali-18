@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: $bg-darkblue;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.online-status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  font-size: 0;
+  background-color: #81e31e;
+  border-radius: 50%;
+
+  &--offline {
+    background-color: #f97676;
+  }
+}
+
+.modal-show {
+  display: block;
+}

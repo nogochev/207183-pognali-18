@@ -1,0 +1,34 @@
+.user-list {
+  @include list-reset;
+  display: flex;
+  min-width: 189px;
+}
+
+.user-list__login {
+  padding: 12px 80px 8px 77px;
+  letter-spacing: 0.2px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    margin: 0;
+  }
+
+  .user-list__login {
+    padding: 12px 30px 8px 28px;
+    font-size: 20px;
+    letter-spacing: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    min-height: 50px;
+    margin-left: 0;
+  }
+
+  .user-list__login {
+    padding-left: 28px;
+    letter-spacing: 0;
+  }
+}

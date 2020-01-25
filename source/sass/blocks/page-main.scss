@@ -1,6 +1,471 @@
-.page-main__page-title {
+.page-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 73px;
+
+  &--inner {
+    display: flex;
+    flex-direction: column;
+    background-color: #edeff6;
+  }
+}
+
+.page-main__heading {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  min-height: 70px;
+  background-color: #161c35;
+  border-radius: 0 0 20px 20px;
+}
+
+.page-main__heading-container {
+  display: flex;
+  width: $mobile-width;
+  min-height: 60px;
+  margin: 0 auto;
   padding: 0 25px;
-  font-size: 36px;
+  padding-top: 21px;
+}
+
+.page-main__page-title {
+  position: relative;
+  margin: 0;
   font-weight: 700;
+  font-size: 36px;
   line-height: 40px;
+  color: #fff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #ff8d30;
+  }
+}
+
+.page-main__index-back {
+  display: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-main__countries-filter {
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  min-height: 82px;
+  margin-top: -30px;
+  padding-top: 20px;
+  color: #444444;
+  background-color: #e2e5f2;
+  border-radius: 0 0 20px 20px;
+}
+
+.page-main__catalog {
+  width: 100%;
+  color: #444444;
+  background-color: #edeff6;
+}
+
+.page-main__wrapper {
+  background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat 53% 150px,
+    url("../../img/globe-back-mobile@1x.jpg") no-repeat center -73px;
+  background-color: #161c36;
+}
+
+.page-main__container {
+  position: relative;
+  z-index: 13;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 320px;
+  min-height: 384px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.page-main__intro {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 141px;
+  margin-bottom: 244px;
+  padding: 0 25px;
+  padding-top: 21px;
+}
+
+.page-main__user-nav {
+  z-index: 11;
+  width: 100%;
+  min-height: 40px;
+  margin-bottom: -20px;
+  padding: 0 25px;
+}
+
+.page-main__reviews {
+  z-index: 10;
+  width: 100%;
+  min-height: 274px;
+  margin-bottom: -20px;
+  padding: 0 25px;
+  padding-top: 31px;
+}
+
+.page-main__user-guide {
+  position: relative;
+  z-index: 13;
+  min-height: 279px;
+  width: 100%;
+}
+
+.page-main__about {
+  position: relative;
+  z-index: 11;
+  width: 100%;
+  min-height: 352px;
+  margin: 0 auto;
+}
+
+.page-main__directions {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 1020px;
+  margin-top: -30px;
+  padding-top: 102px;
+  background-color: #edeff6;
+}
+
+.page-main__companions {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+  min-height: 1352px;
+  margin-top: -30px;
+  padding-top: 50px;
+  background-color: #192144;
+}
+
+.page-main__rates {
+  position: relative;
+  z-index: 8;
+  width: 100%;
+  min-height: 481px;
+  margin-top: -30px;
+  padding-top: 30px;
+  background-color: #edeff6;
+}
+
+.page-main__support {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  min-height: 533px;
+  margin-top: -30px;
+  padding-top: 30px;
+  background-color: #192144;
+}
+
+.page-main__location {
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  min-height: 236px;
+  margin-top: -30px;
+  padding-top: 30px;
+  background-color: #ffd74b;
+}
+
+.page-main__map {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  min-height: 332px;
+  margin-top: -30px;
+  background-color: #192144;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main {
+    padding-top: 132px;
+    background-color: #182044;
+
+    &--inner {
+      background-color: #edeff6;
+    }
+  }
+
+  .page-main__heading {
+    min-height: 219px;
+    padding-top: 86px;
+    background-color: #161c35;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .page-main__heading-container {
+    justify-content: flex-start;
+    align-items: center;
+    width: $tablet-width;
+    padding: 0 40px;
+    padding-top: 0;
+  }
+
+  .page-main__page-title {
+    margin-right: auto;
+    margin-left: 34px;
+    font-size: 60px;
+    line-height: 70px;
+
+    &::after {
+      left: 2px;
+      bottom: -67px;
+      height: 8px;
+      border-radius: 4px;
+    }
+  }
+
+  .page-main__index-back {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    margin-right: 35px;
+  }
+
+  .page-main__back-icon {
+    margin-left: 23px;
+    fill: #ffffff;
+  }
+
+  .page-main__countries-filter {
+    min-height: 196px;
+    margin-top: -60px;
+    padding-top: 60px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .page-main__wrapper {
+    background-color: #182044;
+    background: url("../../img/traveller-illustration-tablet@1x.png") no-repeat 58% 271px,
+      url("../../img/globe-back-tablet@1x.jpg") no-repeat center 250px;
+  }
+
+  .page-main__container {
+    width: 768px;
+    min-height: 832px;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-top: 30px;
+  }
+
+  .page-main__intro {
+    width: 100%;
+    min-height: 210px;
+    margin-bottom: 24px;
+    padding: 0 40px;
+  }
+
+  .page-main__user-nav {
+    display: none;
+  }
+
+  .page-main__reviews {
+    min-height: 353px;
+    margin-bottom: 0;
+    padding: 0 40px;
+    padding-left: 34px;
+  }
+
+  .page-main__user-guide {
+    min-height: 236px;
+    padding: 0;
+  }
+
+  .page-main__about {
+    min-height: 714px;
+    padding-top: 72px;
+  }
+
+  .page-main__directions {
+    min-height: 1153px;
+    margin-top: -60px;
+    padding-top: 133px;
+  }
+
+  .page-main__companions {
+    min-height: 1314px;
+    margin-top: -60px;
+    padding-top: 80px;
+  }
+
+  .page-main__rates {
+    margin-top: -60px;
+    min-height: 616px;
+    padding-top: 60px;
+  }
+
+  .page-main__support {
+    min-height: 774px;
+    margin-top: -60px;
+    padding-top: 64px;
+  }
+
+  .page-main__location {
+    min-height: 385px;
+    margin-top: -60px;
+    padding-top: 64px;
+  }
+
+  .page-main__map {
+    min-height: 581px;
+    margin-top: -60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    padding-top: 110px;
+  }
+
+  .page-main__heading {
+    min-height: 241px;
+    padding-top: 108px;
+    background-color: #161c35;
+  }
+
+  .page-main__heading-container {
+    width: $desktop-width;
+    padding: 0 60px;
+  }
+
+  .page-main__page-title {
+    margin-left: 66px;
+
+    &::after {
+      left: 0px;
+    }
+  }
+
+  .page-main__index-back {
+    margin-right: 63px;
+  }
+
+  .page-main__back-icon {
+    margin-left: 22px;
+  }
+
+  .page-main__countries-filter {
+    min-height: 136px;
+    margin-bottom: 62px;
+  }
+
+  .page-main__wrapper {
+    position: relative;
+    z-index: 12;
+    width: 100%;
+    background: url("../../img/traveller-illustration-desktop@1x.png") no-repeat 57% 0px,
+      url("../../img/globe-back-desktop@1x.jpg") no-repeat center -110px;
+    background-color: #161c34;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .page-main__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1440px;
+    min-height: 640px;
+    margin: 0 auto;
+    padding: 0 60px;
+    padding-top: 99px;
+    padding-bottom: 0px;
+    background: none;
+  }
+
+  .page-main__intro {
+    justify-content: flex-start;
+    align-self: flex-start;
+    width: 490px;
+    min-height: 210px;
+    margin-bottom: 24px;
+    padding: 0;
+    padding-left: 68px;
+  }
+
+  .page-main__user-nav {
+    display: none;
+  }
+
+  .page-main__reviews {
+    align-self: flex-start;
+    width: 286px;
+    min-height: 216px;
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 11px;
+  }
+
+  .page-main__user-guide {
+    padding: 0;
+    min-height: 0;
+  }
+
+  .page-main__about {
+    position: relative;
+    z-index: 11;
+    min-height: 810px;
+    margin: 0 auto;
+    margin-top: -60px;
+    background-color: #192144;
+  }
+
+  .page-main__directions {
+    position: relative;
+    min-height: 810px;
+    margin-top: -60px;
+    padding-top: 0;
+  }
+
+  .page-main__companions {
+    min-height: 810px;
+    padding-top: 60px;
+  }
+
+  .page-main__rates {
+    min-height: 810px;
+  }
+
+  .page-main__support {
+    min-height: 810px;
+    margin-top: -60px;
+    padding-top: 95px;
+  }
+
+  .page-main__location {
+    min-height: 260px;
+    margin-top: -60px;
+    padding-top: 64px;
+  }
+
+  .page-main__map {
+    min-height: 516px;
+    margin-top: -60px;
+  }
 }

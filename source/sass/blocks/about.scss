@@ -1,21 +1,59 @@
 .about {
-  background: url("../../img/about-mobile@1x.png") no-repeat 0 0;
+  position: relative;
+  display: flex;
+  color: #fff;
+  background-color: #192144;
+  border-radius: 0 0 30px 30px;
 }
 
 .about__container {
+  position: relative;
+  z-index: 1;
+  width: $mobile-width;
+  min-height: 319px;
+  margin: 0 auto;
   padding: 0 25px;
   padding-top: 33px;
-  padding-bottom: 84px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 0;
+    z-index: -1;
+    width: 292px;
+    height: 352px;
+    background: url("../../img/about-mobile@1x.png") no-repeat 0 0px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    z-index: -2;
+    width: 132px;
+    height: 132px;
+    background-color: #141b3b;
+    border-radius: 20px;
+  }
 }
 
 .about__title {
-  font-size: 24px;
+  margin: 0;
+  margin-bottom: 19px;
+  padding-left: 24px;
   font-weight: 700;
+  font-size: 24px;
   line-height: 24px;
+  letter-spacing: -0.1px;
   color: #ff8d30;
 }
 
 .about__text {
+  padding-right: 37px;
+  padding-bottom: 3px;
+  padding-left: 24px;
   font-size: 16px;
   font-weight: 300;
   line-height: 22px;
@@ -23,4 +61,133 @@
 
 .about__text--bold {
   font-weight: 700;
+}
+
+.about__br {
+  display: none;
+}
+
+.about__button {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    color: #fff;
+    background-color: #192144;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 768px;
+    min-height: 554px;
+    padding: 0 40px;
+
+    &::before {
+      top: 6px;
+      left: 384px;
+      width: 376px;
+      height: 548px;
+      background: url("../../img/about-tablet@1x.png") no-repeat 0 0px;
+    }
+
+    &::after {
+      top: -42px;
+      left: 40px;
+      width: 688px;
+      height: 213px;
+    }
+  }
+
+  .about__title {
+    margin: 0;
+    margin-bottom: 12px;
+    padding-left: 34px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 45px;
+    color: #ff8d30;
+  }
+
+  .about__text {
+    width: 373px;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    padding-left: 35px;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .about__text--bold {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .about__br {
+    display: block;
+  }
+
+  .about__button {
+    display: inline-block;
+    margin-top: 41px;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    padding: 30px 126px 27px 33px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about__container {
+    width: 1440px;
+    min-height: 738px;
+    padding: 0 40px;
+    padding-top: 120px;
+
+    &::before {
+      top: 73px;
+      left: 750px;
+      width: 630px;
+      height: 665px;
+      background: url("../../img/about-desktop@1x.png") no-repeat 0 0px;
+    }
+
+    &::after {
+      top: 59px;
+      left: 60px;
+      width: 213px;
+      height: 213px;
+    }
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+    padding-left: 90px;
+  }
+
+  .about__br {
+    display: none;
+  }
+
+  .about__text {
+    width: 745px;
+    margin-bottom: 17px;
+    padding-left: 91px;
+  }
+
+  .about__text--bold {
+    padding-right: 190px;
+  }
+
+  .about__button {
+    margin-top: 67px;
+    margin-left: 91px;
+  }
 }

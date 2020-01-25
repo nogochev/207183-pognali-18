@@ -1,11 +1,266 @@
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  width: 209px;
+  @include list-reset;
+
+  &--support {
+    width: 240px;
+    @include list-reset;
+  }
+}
+
+.contacts-list__item {
+  margin-bottom: 23px;
+}
+
 .contacts-list__link {
-  font-size: 16px;
+  position: relative;
   font-weight: 700;
+  font-size: 16px;
   line-height: 22px;
-  color: #192144;
   text-transform: uppercase;
+  word-wrap: break-word;
+  color: #192144;
 
   &--support {
     color: #ffd74b;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: -61px;
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    border-radius: 50%;
+  }
+
+  &--support:hover,
+  &--support:focus {
+    color: #ffbd30;
+  }
+
+  &--support:active {
+    color: rgba(255, 189, 48, 0.3);
+  }
+
+  &--support:hover path {
+    fill: #ffbd30;
+  }
+
+  &--support:active path {
+    fill: #ffbd30;
+    fill-opacity: 0.3;
+  }
+}
+
+.contacts-list__svg {
+  position: absolute;
+  fill: #ffd74b;
+
+  &--tel {
+    top: -2px;
+    left: -47px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &--mail {
+    top: 1px;
+    left: -47px;
+    width: 18px;
+    height: 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts-list {
+    width: 540px;
+  }
+
+  .contacts-list__item {
+    margin-bottom: 38px;
+  }
+
+  .contacts-list__link {
+    font-size: 28px;
+    line-height: 28px;
+
+    &::before {
+      width: 68px;
+      height: 68px;
+    }
+
+    &--tel::before {
+      top: -25px;
+      left: -91px;
+    }
+
+    &--mail::before {
+      top: -23px;
+      left: -91px;
+    }
+  }
+
+  .contacts-list__svg {
+    left: -70px;
+    width: 27px;
+
+    &--tel {
+      top: -3px;
+      height: 27px;
+    }
+
+    &--mail {
+      top: 3px;
+      height: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts-list {
+    flex-direction: row;
+  }
+
+  .contacts-list__item {
+    margin-bottom: 0;
+  }
+
+  .contacts-list__link {
+    position: relative;
+    display: block;
+    width: 18px;
+    height: 18px;
+    padding: 25px;
+    font-size: 0;
+    border-radius: 50px;
+
+    &:active::before {
+      opacity: 0.3;
+    }
+
+    &--tel {
+      background-color: #ff8d30;
+
+      &:hover {
+        background-color: #f26926;
+      }
+    }
+
+    &--mail {
+      background-color: #ffbd30;
+
+      &:hover {
+        background-color: #ff8d30;
+      }
+    }
+
+    &--tel::before,
+    &--mail::before {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background-color: transparent;
+      border-radius: 0px;
+    }
+
+    &--tel::before {
+      width: 20px;
+      height: 20px;
+      background-image: url("../../img/topmenu-phone.svg");
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: 1px 0;
+      background-size: 18px 18px;
+    }
+
+    &--mail::before {
+      width: 25px;
+      height: 25px;
+      background-image: url("../../img/topmenu-mail.svg");
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: 0px 2px;
+      background-size: 18px 14px;
+    }
+  }
+
+  .contacts-list__svg {
+    display: none;
+  }
+
+  .contacts-list--support {
+    width: 920px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .contacts-list__item {
+      margin-bottom: 40px;
+    }
+
+    .contacts-list__link--support {
+      display: inline-block;
+      vertical-align: top;
+      width: 360px;
+      font-size: 28px;
+      line-height: 28px;
+      color: #ffd74b;
+      background: none;
+
+      &:active::before {
+        opacity: 1;
+      }
+
+      &::before {
+        top: -9px;
+        left: -97px;
+        width: 90px;
+        height: 90px;
+        background-color: #121936;
+        border-radius: 50%;
+      }
+
+      &--tel::before {
+        top: -9px;
+        left: -97px;
+      }
+
+      &--mail::before {
+        top: -9px;
+        left: -97px;
+      }
+
+      &:hover,
+      &:focus {
+        color: #ffbd30;
+      }
+
+      &:active {
+        color: rgba(255, 189, 48, 0.3);
+      }
+    }
+
+    .contacts-list__svg {
+      left: -69px;
+      display: block;
+      width: 36px;
+
+      &--tel {
+        top: 19px;
+        height: 36px;
+      }
+
+      &--mail {
+        top: 24px;
+        height: 26px;
+      }
+    }
   }
 }

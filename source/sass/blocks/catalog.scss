@@ -1,65 +1,35 @@
 .catalog {
-  background-color: #edeff6;
+  color: #444;
+  background-color: #e2e5f2;
 }
 
 .catalog__container {
+  width: $mobile-width;
+  min-height: 200px;
+  margin: 0 auto;
   padding: 0 25px;
+  padding-top: 24px;
 }
 
-.catalog__item {
-  margin-bottom: 10px;
-  padding-top: 15px;
-  padding-bottom: 22px;
-  color: #1d2e5b;
-  background-color: #ffffff;
+@media (min-width: $tablet-width) {
+  .catalog__container {
+    width: $tablet-width;
+    min-height: 200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    padding-top: 46px;
+  }
 }
 
-.catalog__like-count {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21px;
-  text-transform: uppercase;
-}
-
-.catalog__name {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 20px;
-}
-
-.catalog__tags {
-  color: #444444;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
-.catalog__subtitle {
-  color: #444444;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
-.catalog__country-name {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.catalog__count {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 18px;
-}
-
-.catalog__button-add {
-  color: #1d2e5b;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 30px;
-  text-transform: uppercase;
-  border: none;
-  background-color: transparent;
+@media (min-width: $desktop-width) {
+  .catalog__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: $desktop-width;
+    min-height: 200px;
+    margin: 0 auto;
+    padding: 0 60px;
+    padding-top: 24px;
+  }
 }
