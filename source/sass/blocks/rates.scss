@@ -1,41 +1,474 @@
 .rates {
+  color: #444444;
   background-color: #edeff6;
+  border-radius: 0 0 30px 30px;
 }
 
 .rates__container {
+  position: relative;
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  width: $mobile-width;
+  min-height: 451px;
+  margin: 0 auto;
   padding: 0 25px;
   padding-top: 52px;
-  padding-bottom: 38px;
+  padding-bottom: 30px;
 }
 
 .rates__title {
-  color: #ff8d30;
-  font-size: 24px;
+  width: 270px;
+  margin-bottom: 43px;
+  padding-right: 120px;
+  padding-left: 25px;
   font-weight: 700;
+  font-size: 24px;
   line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #ff8d30;
+
+  &--modal {
+    margin: 0;
+    margin-bottom: 29px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.rates__list {
+  position: relative;
+  min-height: 199px;
+  @include list-reset;
+  padding-left: 24px;
+  padding-right: 45px;
+  margin-bottom: 26px;
+
+  &--modal {
+    min-height: 265px;
+    margin-bottom: 33px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -130px;
+    left: 170px;
+    width: 99px;
+    height: 99px;
+    background-image: url("../../img/rates@1x.png");
+    background-size: 99px 99px;
+  }
+
+  &--modal::before {
+    display: none;
+  }
+}
+
+.rates__item {
+  position: relative;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: -44px;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #ffa530;
+    border-radius: 50%;
+  }
+
+  &--one::before {
+    content: "1";
+    background-color: #ffa530;
+  }
+
+  &--two::before {
+    content: "2";
+    background-color: #ffbd30;
+  }
+
+  &--three::before {
+    content: "3";
+    top: 4px;
+    line-height: 37px;
+    background-color: #ffd74b;
+  }
+
+  &--modal {
+    width: 220px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 1px;
+  }
+
+  &--modal::before {
+    display: none;
+  }
 }
 
 .rates__feature,
 .rates__price {
-  display: block;
-  color: #444444;
-  font-size: 16px;
+  display: flex;
+  flex-direction: column;
   font-weight: 300;
+  font-size: 16px;
   line-height: 22px;
-}
-
-.rates__business {
-  background-color: #ffffff;
+  color: #444444;
 }
 
 .rates__business-show,
 .rates__business-close {
-  color: #192144;
-  font-size: 16px;
+  font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 700;
+  font-size: 16px;
   line-height: 16px;
+  color: #192144;
+  border: none;
+  cursor: pointer;
+}
+
+.rates__business-show {
+  align-self: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  background-color: transparent;
+}
+
+.rates-modal {
+  position: fixed;
+  top: 263px;
+  left: 50%;
+  z-index: 15;
+  display: none;
+  width: 270px;
+  min-height: 443px;
+  margin: 0 auto;
+  margin-left: -135px;
+  padding-top: 33px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(29, 46, 91, 0.1);
 }
 
 .rates__business-close {
+  width: 100%;
+  padding-left: 4px;
+  padding-top: 19px;
+  padding-bottom: 16px;
+  line-height: 24px;
   text-transform: uppercase;
+  color: #1d2e5b;
+  background-color: #f3f4f8;
+  border-radius: 0 0 20px 20px;
+
+  &:hover,
+  &:focus {
+    background-color: #edeff6;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+}
+
+.rates__business-icon {
+  display: none;
+  fill: #132576;
+}
+
+@media (min-width: $tablet-width) {
+  .rates {
+    border-radius: 0 0 60px 60px;
+  }
+
+  .rates__container {
+    width: $tablet-width;
+    min-height: 556px;
+    padding: 0 40px;
+    padding-top: 74px;
+  }
+
+  .rates__title {
+    width: 100%;
+    margin-bottom: 73px;
+    padding-right: 0;
+    padding-left: 2px;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: -0.1px;
+    text-align: center;
+
+    &--modal {
+      margin-bottom: 47px;
+      padding-left: 2px;
+    }
+  }
+
+  .rates__list {
+    margin-bottom: 34px;
+    padding-left: 90px;
+    padding-right: 34px;
+
+    &::before {
+      top: 217px;
+      left: 543px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -43px;
+      right: 0px;
+      z-index: -1;
+      width: 198px;
+      height: 285px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+    }
+
+    &--modal {
+      min-height: 225px;
+      margin-bottom: 51px;
+      padding-left: 92px;
+      padding-right: 91px;
+
+      .rates__feature,
+      .rates__price {
+        font-size: 22px;
+        line-height: 28px;
+      }
+    }
+
+    &--modal::before,
+    &--modal::after {
+      display: none;
+    }
+  }
+
+  .rates__item {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    text-align: left;
+
+    &::before {
+      top: -2px;
+      right: 587px;
+      width: 67px;
+      height: 67px;
+      font-size: 28px;
+      line-height: 74px;
+      letter-spacing: -1px;
+    }
+
+    &--two::before {
+      top: -1px;
+      line-height: 70px;
+    }
+
+    &--three::before {
+      top: 0px;
+      line-height: 70px;
+    }
+
+    &--modal {
+      width: 505px;
+      margin-top: -1px;
+      padding-top: 13px;
+      padding-bottom: 15px;
+      padding-left: 0;
+    }
+
+    &--modal:last-child {
+      padding-bottom: 14px;
+    }
+
+    &--modal::before {
+      display: none;
+    }
+  }
+
+  .rates__feature,
+  .rates__price {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .rates__feature {
+    margin-right: auto;
+  }
+
+  .rates__business-show {
+    position: relative;
+    align-self: flex-start;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 89px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #132576;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      color: rgba(#132576, 0.7);
+    }
+
+    &:active {
+      color: rgba(#132576, 0.3);
+    }
+
+    &:hover .rates__business-icon,
+    &:focus .rates__business-icon {
+      fill: rgba(#132576, 0.7);
+    }
+
+    &:active .rates__business-icon {
+      fill: rgba(#132576, 0.3);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 67px;
+      height: 67px;
+      background-color: #e2e5f2;
+      border-radius: 50px;
+    }
+  }
+
+  .rates-modal {
+    display: none;
+    top: 221px;
+    left: 50%;
+    width: 688px;
+    min-height: 526px;
+    margin-left: -348px;
+    padding-top: 51px;
+    border-radius: 30px;
+  }
+
+  .rates__business-close {
+    padding-left: 7px;
+    padding-top: 41px;
+    padding-bottom: 43px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .rates__business-icon {
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__container {
+    width: $desktop-width;
+    min-height: 750px;
+    padding: 0 60px;
+    padding-top: 107px;
+  }
+
+  .rates__title {
+    margin-bottom: 133px;
+    padding-left: 2px;
+
+    &--modal {
+      margin-bottom: 47px;
+      padding-left: 2px;
+    }
+  }
+
+  .rates__list {
+    padding-right: 325px;
+    padding-left: 161px;
+
+    &::before {
+      top: 1px;
+      left: 1048px;
+      width: 198px;
+      height: 198px;
+      background-size: 198px 198px;
+    }
+
+    &::after {
+      top: -51px;
+      right: 186px;
+      width: 444px;
+      height: 300px;
+    }
+
+    &--modal {
+      padding-right: 59px;
+      padding-left: 59px;
+    }
+  }
+
+  .rates__item {
+    width: 814px;
+
+    &::before {
+      right: 837px;
+    }
+
+    &--modal {
+      width: 632px;
+    }
+  }
+
+  .rates__business-show {
+    margin-left: 71px;
+  }
+
+  .rates-modal {
+    display: none;
+    width: 750px;
+    margin-left: -375px;
+  }
+}
+
+.rates-modal--show {
+  display: block;
+  animation: bounce 0.6s;
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+    }
+
+    70% {
+      transform: translateY(30px);
+    }
+
+    90% {
+      transform: translateY(-10px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 }

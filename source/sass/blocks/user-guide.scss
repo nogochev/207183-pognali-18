@@ -1,22 +1,41 @@
 .user-guide {
+  display: flex;
+  flex-direction: column;
+  // width: 270px;
   background-color: #192144;
 }
 
 .user-guide__container {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto;
   padding: 0 25px;
-  padding-top: 50px;
-  padding-bottom: 39px;
+  // padding-top: 50px;
+  // padding-bottom: 39px;
 }
 
 .user-guide__list {
+  // outline: 2px solid cyan;
+  width: 270px;
+  min-height: 320px;
+  @include list-reset;
+  margin-top: -80px;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   color: #161c35;
 }
 
-.user-guide__number {
-  color: #ffffff;
+.user-guide__item {
+  position: relative;
+  margin-bottom: -20px;
+  padding-top: 22px;
+  padding-right: 83px;
+  padding-bottom: 42px;
+  padding-left: 24px;
+  border-radius: 10px;
+  background-color: #ff8d30;
 }
 
 .user-guide__item:nth-child(1) {
@@ -29,8 +48,182 @@
 
 .user-guide__item:nth-child(3) {
   background-color: #ffbd30;
+  padding-right: 103px;
 }
 
 .user-guide__item:nth-child(4) {
   background-color: #ffd74b;
+}
+
+.user-guide__item:last-child {
+  padding-bottom: 22px;
+}
+
+.user-guide__number {
+  position: absolute;
+  top: 22px;
+  right: 21px;
+  color: #ffffff;
+  user-select: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user-guide {
+    // display: flex;
+    // flex-direction: column;
+    // width: 688px;
+  }
+
+  .user-guide__container {
+    width: $tablet-width;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .user-guide__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 688px;
+    min-height: 280px;
+    @include list-reset;
+    margin-top: -110px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #161c35;
+  }
+
+  .user-guide__item {
+    // position: relative;
+    // margin-bottom: -20px;
+    width: 191px;
+    margin-bottom: 0;
+    padding-top: 31px;
+    padding-right: 120px;
+    padding-bottom: 61px;
+    padding-left: 33px;
+    box-sizing: content-box;
+    border-radius: 0;
+    // background-color: #ff8d30;
+  }
+
+  .user-guide__item:nth-child(1) {
+    width: 211px;
+    border-top-left-radius: 20px;
+  }
+
+  .user-guide__item:nth-child(2) {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: -20px;
+  }
+
+  .user-guide__item:nth-child(3) {
+    width: 191px;
+    border-bottom-left-radius: 20px;
+    padding-right: 140px;
+  }
+
+  .user-guide__item:nth-child(4) {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: -20px;
+  }
+
+  .user-guide__number {
+    top: 44px;
+    left: 33px;
+    font-size: 30px;
+    line-height: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-guide {
+    background-color: transparent;
+  }
+
+  .user-guide__container {
+    width: $desktop-width;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .user-guide__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 1320px;
+    min-height: 107px;
+    @include list-reset;
+    margin-top: -230px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    color: #161c35;
+  }
+
+  .user-guide__item {
+    min-width: 190px;
+    min-height: 60px;
+    margin-bottom: 0;
+    padding-top: 29px;
+    padding-right: 50px;
+    padding-bottom: 18px;
+    padding-left: 34px;
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .user-guide__item:nth-child(1) {
+    padding-right: 89px;
+
+    .user-guide__number {
+      left: 269px;
+    }
+  }
+
+  .user-guide__item:nth-child(2) {
+    margin-left: -19px;
+    padding-right: 165px;
+    padding-left: 30px;
+    border-bottom-right-radius: 20px;
+
+    .user-guide__number {
+      left: 300px;
+    }
+  }
+
+  .user-guide__item:nth-child(3) {
+    margin-left: -41px;
+    padding-left: 31px;
+    padding-right: 143px;
+
+    .user-guide__number {
+      left: 301px;
+    }
+  }
+
+  .user-guide__item:nth-child(4) {
+    margin-left: -20px;
+    padding-left: 30px;
+    padding-right: 94px;
+    border-top-right-radius: 20px;
+
+    .user-guide__number {
+      left: 270px;
+    }
+  }
+
+  .user-guide__item:last-child {
+    padding-bottom: 18px;
+  }
+
+  .user-guide__number {
+    top: -19px;
+    font-size: 24px;
+    line-height: 120px;
+  }
 }

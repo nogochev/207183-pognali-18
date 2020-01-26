@@ -1,0 +1,63 @@
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin section-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff8d30;
+}
+
+@mixin none-menu-mobile {
+  background-color: #161c34;
+
+  .page-header__logo-image {
+    opacity: 1;
+  }
+
+  .page-header__toggle {
+    background-size: 0;
+  }
+
+  .page-header__toggle-svg {
+    opacity: 1;
+  }
+
+  .page-header__navigation,
+  .page-header__user-list,
+  .page-header__contacts-list,
+  .page-header__social-list {
+    display: none;
+  }
+}
+
+@mixin none-menu-tablet {
+  .page-header__logo-image {
+    opacity: 0;
+  }
+
+  .page-header__navigation,
+  .page-header__contacts-list {
+    display: none;
+  }
+
+  .page-header__user-list {
+    display: flex;
+  }
+}
+
+@mixin none-menu-desktop {
+
+  .page-header__navigation,
+  .page-header__contacts-list,
+  .page-header__user-list {
+    display: flex;
+  }
+
+  .page-header__social-list {
+    display: none;
+  }
+}

@@ -1,0 +1,258 @@
+.choice-country {
+  z-index: 900;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ffffff;
+  border: solid 1px #cbced9;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 20px 50px 0 rgba(#192144, 0.1);
+
+  &--active {
+    display: flex;
+  }
+}
+
+.choice-country__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice-country__letter-list {
+  display: flex;
+  flex-wrap: wrap;
+  @include list-reset;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.choice-country__letter-item {
+  width: 20%;
+  height: 41px;
+  border-right: 1px solid #cbced9;
+  border-bottom: 1px solid #cbced9;
+
+  &:nth-child(5n) {
+    border-right: none;
+  }
+}
+
+.choice-country__letter-label-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  color: #1d2e5b;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.choice-country__all-countries {
+  flex-grow: 1;
+  @include list-reset;
+  margin: 0;
+}
+
+.choice-country__all-countries-item {
+  margin-bottom: 0;
+}
+
+.choice-country__countries-list {
+  display: none;
+  @include list-reset;
+  margin: 0;
+  padding-top: 56px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.choice-country__countries-item {
+  display: flex;
+}
+
+.choice-country__countries-link {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+
+  &:hover,
+  &:focus {
+    color: #1d2e5b;
+  }
+
+  &:active {
+    color: rgba(#1d2e5b, 0.3);
+  }
+}
+
+.choice-country__letter-button--1:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-1"],
+.choice-country__letter-button--2:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-2"],
+.choice-country__letter-button--3:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-3"],
+.choice-country__letter-button--4:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-4"],
+.choice-country__letter-button--5:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-5"],
+.choice-country__letter-button--6:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-6"],
+.choice-country__letter-button--7:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-7"],
+.choice-country__letter-button--8:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-8"],
+.choice-country__letter-button--9:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-9"],
+.choice-country__letter-button--10:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-10"],
+.choice-country__letter-button--11:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-11"],
+.choice-country__letter-button--12:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-12"],
+.choice-country__letter-button--13:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-13"],
+.choice-country__letter-button--14:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-14"],
+.choice-country__letter-button--15:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-15"],
+.choice-country__letter-button--16:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-16"],
+.choice-country__letter-button--17:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-17"],
+.choice-country__letter-button--18:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-18"],
+.choice-country__letter-button--19:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-19"],
+.choice-country__letter-button--20:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-20"],
+.choice-country__letter-button--21:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-21"],
+.choice-country__letter-button--22:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-22"],
+.choice-country__letter-button--23:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-23"],
+.choice-country__letter-button--24:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-24"],
+.choice-country__letter-button--25:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-25"] {
+  background-color: #edeff6;
+
+  @media (min-width: $tablet-width) {
+    color: #ffffff;
+    background-color: #1d2e5b;
+    border-color: #1d2e5b;
+  }
+}
+
+.choice-country__letter-button--1:checked~.choice-country__all-countries .choice-country__countries-list--1,
+.choice-country__letter-button--2:checked~.choice-country__all-countries .choice-country__countries-list--2,
+.choice-country__letter-button--3:checked~.choice-country__all-countries .choice-country__countries-list--3,
+.choice-country__letter-button--4:checked~.choice-country__all-countries .choice-country__countries-list--4,
+.choice-country__letter-button--5:checked~.choice-country__all-countries .choice-country__countries-list--5,
+.choice-country__letter-button--6:checked~.choice-country__all-countries .choice-country__countries-list--6,
+.choice-country__letter-button--7:checked~.choice-country__all-countries .choice-country__countries-list--7,
+.choice-country__letter-button--8:checked~.choice-country__all-countries .choice-country__countries-list--8,
+.choice-country__letter-button--9:checked~.choice-country__all-countries .choice-country__countries-list--9,
+.choice-country__letter-button--10:checked~.choice-country__all-countries .choice-country__countries-list--10,
+.choice-country__letter-button--11:checked~.choice-country__all-countries .choice-country__countries-list--11,
+.choice-country__letter-button--12:checked~.choice-country__all-countries .choice-country__countries-list--12,
+.choice-country__letter-button--13:checked~.choice-country__all-countries .choice-country__countries-list--13,
+.choice-country__letter-button--14:checked~.choice-country__all-countries .choice-country__countries-list--14,
+.choice-country__letter-button--15:checked~.choice-country__all-countries .choice-country__countries-list--15,
+.choice-country__letter-button--16:checked~.choice-country__all-countries .choice-country__countries-list--16,
+.choice-country__letter-button--17:checked~.choice-country__all-countries .choice-country__countries-list--17,
+.choice-country__letter-button--18:checked~.choice-country__all-countries .choice-country__countries-list--18,
+.choice-country__letter-button--19:checked~.choice-country__all-countries .choice-country__countries-list--19,
+.choice-country__letter-button--20:checked~.choice-country__all-countries .choice-country__countries-list--20,
+.choice-country__letter-button--21:checked~.choice-country__all-countries .choice-country__countries-list--21,
+.choice-country__letter-button--22:checked~.choice-country__all-countries .choice-country__countries-list--22,
+.choice-country__letter-button--23:checked~.choice-country__all-countries .choice-country__countries-list--23,
+.choice-country__letter-button--24:checked~.choice-country__all-countries .choice-country__countries-list--24,
+.choice-country__letter-button--25:checked~.choice-country__all-countries .choice-country__countries-list--25 {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .choice-country {
+    width: 575px;
+    border: none;
+  }
+
+  .choice-country__container {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 33px;
+    padding-bottom: 96px;
+    padding-left: 27px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 206px;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(#d6d9e6, 0.5);
+    }
+  }
+
+  .choice-country__letter-list {
+    width: 263px;
+    border: 1px solid #cbced9;
+    border-bottom: none;
+  }
+
+  .choice-country__letter-item {
+    width: 52px;
+    height: 69px;
+  }
+
+  .choice-country__letter-label-button {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .choice-country__all-countries {
+    flex-grow: 0;
+    width: 206px;
+  }
+
+  .choice-country__countries-list {
+    width: 206px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 25px;
+  }
+
+  .choice-country__countries-link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .choice-country {
+    width: 731px;
+  }
+
+  .choice-country__container {
+    &::before {
+      right: 240px;
+    }
+  }
+
+  .choice-country__letter-list {
+    width: 360px;
+    border: none;
+  }
+
+  .choice-country__letter-item {
+    width: 60px;
+    height: 70px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: none;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+  }
+
+  .choice-country__letter-label-button {
+    border: 1px solid #cbced9;
+    border-radius: 4px;
+
+    &:hover {
+      border-color: #959bb2;
+    }
+  }
+
+  .choice-country__all-countries {
+    width: 240px;
+  }
+}

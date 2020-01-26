@@ -1,47 +1,99 @@
 .plans {
-  padding-top: 29px;
-  padding-bottom: 56px;
+  padding: 8px 0 27px;
   background-color: #dfe3f0;
-  color: #1d2e5b;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
 }
 
 .plans__container {
+  position: relative;
+  z-index: 10;
+  width: $mobile-width;
+  min-height: 60px;
+  margin: 0 auto;
   padding: 0 25px;
 }
 
 .plans__title {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 24px;
+  margin-bottom: 28px;
+  color: #1d2e5b;
 }
 
-.plans__countries {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 16px;
+.plans__list {
+  @include list-reset;
+  margin-bottom: 18px;
 }
 
-.plans__profile {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
+.plans__list-item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
-.plans__date {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 14px;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
+@media (min-width: $tablet-width) {
+  .plans {
+    padding: 20px 0 74px;
+  }
+
+  .plans__container {
+    position: relative;
+    z-index: 10;
+    width: $tablet-width;
+    min-height: 60px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .plans__content {
+    padding: 0 35px;
+  }
+
+  .plans__title {
+    margin-bottom: 41px;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: -0.2px;
+  }
 }
 
-.plans__change {
-  color: rgba(#000000, 0.3%);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 18px;
-  text-transform: uppercase;
-  letter-spacing: 1.4px;
+@media (min-width: $desktop-width) {
+  .plans {
+    padding-top: 19px;
+    padding-bottom: 123px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+  }
+
+  .plans__container {
+    position: relative;
+    z-index: 10;
+    width: $desktop-width;
+    min-height: 60px;
+    margin: 0 auto;
+    padding: 0 60px;
+  }
+
+  .plans__content {
+    padding: 0 0 0 64px;
+  }
+
+  .plans__title {
+    margin-bottom: 41px;
+    padding-left: 7px;
+  }
+
+  .plans__list {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .plans__list-item {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
