@@ -15,6 +15,7 @@
   padding-bottom: 30px;
   background: url("../../img/rogovaya-back-mobile@1x.png") no-repeat -10px 291px,
     url("../../img/smolov-back-desktop@1x.png") no-repeat 152px 19px;
+  background-size: 71px 71px, 143px 143px;
 
   &::before {
     content: "";
@@ -26,6 +27,13 @@
     height: 132px;
     background-color: #141b3b;
     border-radius: 20px;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .companions__container {
+    background-image: url("../../img/rogovaya-back-mobile@2x.png"),
+      url("../../img/smolov-back-desktop@2x.png");
   }
 }
 
@@ -103,7 +111,7 @@
 
   &:hover {
     transform: scale(1.05);
-    transition: all .3s ease-out;
+    transition: all 0.3s ease-out;
   }
 }
 
@@ -328,14 +336,23 @@
     min-height: 1234px;
     padding: 0 40px;
     padding-top: 121px;
-    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat 408px 60px,
+    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat 408px
+        60px,
       url("../../img/smolov-back-desktop@1x.png") no-repeat 40px 406px;
+    background-size: 285px 285px, 143px 143px;
 
     &::before {
       top: 60px;
       left: 40px;
       width: 213px;
       height: 213px;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .companions__container {
+      background-image: url("../../img/rogovaya-back-desktop@2x.png"),
+        url("../../img/smolov-back-desktop@2x.png");
     }
   }
 
@@ -472,12 +489,21 @@
     padding: 0 60px;
     padding-top: 129px;
     padding-bottom: 60px;
-    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat 191px 385px,
+    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat 191px
+        385px,
       url("../../img/smolov-back-desktop@1x.png") no-repeat 547px 133px;
+    background-size: 285px 285px, 143px 143px;
 
     &::before {
       top: 68px;
       left: 60px;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .companions__container {
+      background-image: url("../../img/rogovaya-back-desktop@2x.png"),
+        url("../../img/smolov-back-desktop@2x.png");
     }
   }
 

@@ -57,7 +57,13 @@
     width: 99px;
     height: 99px;
     background-image: url("../../img/rates@1x.png");
-    background-size: 99px 99px;
+    background-size: contain;
+
+    @media (min-resolution: 1.5dppx) {
+      &::before {
+        background-image: url("../img/rates@2x.png");
+      }
+    }
   }
 
   &--modal::before {
