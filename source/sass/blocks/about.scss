@@ -1,7 +1,7 @@
 .about {
   position: relative;
   display: flex;
-  color: #fff;
+  color: #ffffff;
   background-color: #192144;
   border-radius: 0 0 30px 30px;
 }
@@ -23,7 +23,7 @@
     z-index: -1;
     width: 292px;
     height: 352px;
-    background: url("../../img/about-mobile@1x.png") no-repeat 0 0px;
+    background: url("../../img/about-mobile@1x.png") no-repeat 0 0;
   }
 
   &::after {
@@ -73,7 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    color: #fff;
+    color: #ffffff;
     background-color: #192144;
     border-radius: 0 0 60px 60px;
   }
@@ -91,7 +91,7 @@
       left: 384px;
       width: 376px;
       height: 548px;
-      background: url("../../img/about-tablet@1x.png") no-repeat 0 0px;
+      background: url("../../img/about-tablet@1x.png") no-repeat 0 0;
     }
 
     &::after {
@@ -156,7 +156,7 @@
       left: 750px;
       width: 630px;
       height: 665px;
-      background: url("../../img/about-desktop@1x.png") no-repeat 0 0px;
+      background: url("../../img/about-desktop@1x.png") no-repeat 0 0;
     }
 
     &::after {

@@ -130,17 +130,17 @@
   display: none;
 }
 
-.calendar__cell input:disabled+.calendar__day-number {
+.calendar__cell input:disabled + .calendar__day-number {
   color: rgba(#444444, 0.3);
   background-color: transparent;
   cursor: default;
 }
 
-.calendar__cell input:disabled+.calendar__day-number:hover::after {
+.calendar__cell input:disabled + .calendar__day-number:hover::after {
   display: none;
 }
 
-.calendar__cell input:checked+.calendar__day-number {
+.calendar__cell input:checked + .calendar__day-number {
   position: relative;
   color: #ffffff;
   background-color: #101d41;
@@ -158,7 +158,7 @@
   }
 }
 
-.calendar__cell input:focus+.calendar__day-number {
+.calendar__cell input:focus + .calendar__day-number {
   &::after {
     content: "";
     position: absolute;
@@ -219,8 +219,7 @@
     }
   }
 
-  .calendar__cell input:checked+.calendar__day-number {
-
+  .calendar__cell input:checked + .calendar__day-number {
     &:hover::after,
     &:focus::after {
       top: -3px;
@@ -231,7 +230,7 @@
     }
   }
 
-  .calendar__cell input:focus+.calendar__day-number {
+  .calendar__cell input:focus + .calendar__day-number {
     &::after {
       top: -3px;
       left: -3px;
@@ -299,8 +298,7 @@
     display: flex;
   }
 
-  .calendar__cell input:checked+.calendar__day-number {
-
+  .calendar__cell input:checked + .calendar__day-number {
     &:hover::after,
     &:focus::after {
       width: 146px;
@@ -308,7 +306,7 @@
     }
   }
 
-  .calendar__cell input:focus+.calendar__day-number {
+  .calendar__cell input:focus + .calendar__day-number {
     &::after {
       width: 146px;
       height: 74px;

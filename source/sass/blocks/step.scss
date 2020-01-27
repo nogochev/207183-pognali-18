@@ -302,11 +302,11 @@
   }
 }
 
-.step__input-wrapper input:checked+.step__children-checkbox::after {
+.step__input-wrapper input:checked + .step__children-checkbox::after {
   display: block;
 }
 
-.step__input-wrapper input:focus+.step__children-checkbox::before {
+.step__input-wrapper input:focus + .step__children-checkbox::before {
   box-shadow: 0 0 0 1px rgba(77, 144, 254, 0.5);
 }
 
@@ -662,7 +662,7 @@
   }
 }
 
-.step__activity-country+.step__activity-country {
+.step__activity-country + .step__activity-country {
   position: relative;
 
   &::before {
@@ -786,7 +786,7 @@
   border-radius: 4px;
 }
 
-.step__activity-textarea:invalid~.step__required-text {
+.step__activity-textarea:invalid ~ .step__required-text {
   display: block;
 }
 
@@ -1147,7 +1147,7 @@
     }
   }
 
-  .step__activity-country+.step__activity-country {
+  .step__activity-country + .step__activity-country {
     position: relative;
 
     &::before {
@@ -1411,7 +1411,7 @@
     padding-right: 0;
   }
 
-  .step__activity-country+.step__activity-country {
+  .step__activity-country + .step__activity-country {
     position: relative;
     margin-bottom: 46px;
 
