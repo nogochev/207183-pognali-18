@@ -219,12 +219,12 @@
   }
 }
 
-.profile__transport-item input:checked+.profile__transport-type svg {
+.profile__transport-item input:checked + .profile__transport-type svg {
   fill: #1d2e5b;
   opacity: 1;
 }
 
-.profile__transport-item input:focus+.profile__transport-type {
+.profile__transport-item input:focus + .profile__transport-type {
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
