@@ -61,6 +61,12 @@
   }
 }
 
+.directions__link {
+  &:focus {
+    box-shadow: 0 0 0 2px rgba(77, 144, 254, 0.5);
+  }
+}
+
 .directions__picture {
   position: relative;
   z-index: 1;
@@ -70,6 +76,7 @@
 }
 
 .directions__image {
+  display: block;
   width: 270px;
   height: 110px;
   border-radius: 10px 10px 0 0;
@@ -155,17 +162,24 @@
     min-height: 1020px;
     padding: 0 40px;
     background: url("../../img/flags-back@1x.png") no-repeat 439px 7px;
+    background-size: 289px, 575px;
 
     &::before {
       content: "";
       position: absolute;
       top: 333px;
       left: 40px;
-      z-index: 1;
+      z-index: -1;
       width: 141px;
       height: 141px;
       background-color: #e2e5f2;
       border-radius: 20px;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .directions__container {
+      background-image: url("../../img/flags-back@2x.png");
     }
   }
 
