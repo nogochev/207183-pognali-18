@@ -153,7 +153,10 @@
                 <span class="profile__level-text">level</span>
               </div>
               <div class="profile__photo">
-                <img class="profile__user-photo" src="img/demin-desktop@1x.jpg" width="100" height="100" alt="Татьяна Фирсова фото">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
+                  <img class="profile__user-photo" src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x" width="100" height="100" alt="Моё фото">
+                </picture>
               </div>
             </div>
 
@@ -623,7 +626,7 @@
                   </button>
                   <div class="step__flag-wrapper step__flag-wrapper--selected">
                     <div class="step__flag-country step__flag-country--big" data-tooltip="Босния и Герцеговина">
-                      <img class="step__flag-image" src="img/flag-bosnia.png" alt="Флаг Боснии и Герцеговины" width="35" height="24">
+                      <img class="step__flag-image" src="img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="35" height="24">
                     </div>
                   </div>
                   <button class="step__country-del" type="button">
@@ -637,7 +640,7 @@
                   </button>
                   <div class="step__flag-wrapper step__flag-wrapper--selected">
                     <div class="step__flag-country step__flag-country--big" data-tooltip="Чехия">
-                      <img class="step__flag-image" src="img/flag-czech.png" alt="Флаг Чехии" width="35" height="24">
+                      <img class="step__flag-image" src="img/flag-czech.svg" alt="Флаг Чехии" width="35" height="24">
                     </div>
                   </div>
                   <button class="step__country-del" type="button">
@@ -1475,7 +1478,7 @@
                   <div class="step__activity-country-header">
                     <label class="step__activity-country-name" for="bosna-her">Босния и Герцеговина</label>
                     <div class="step__flag-country step__flag-country--big" data-tooltip="Босния и Герцеговина">
-                      <img class="step__flag-image" src="img/flag-bosnia.png" alt="Флаг Боснии и Герцеговины" width="35" height="24">
+                      <img class="step__flag-image" src="img/flag-bosnia.svg" alt="Флаг Боснии и Герцеговины" width="35" height="24">
                     </div>
                   </div>
                   <div class="step__activity-country-body">
@@ -1490,7 +1493,7 @@
                   <div class="step__activity-country-header">
                     <label class="step__activity-country-name" for="cz-rep">Чехия</label>
                     <div class="step__flag-country step__flag-country--big" data-tooltip="Чехия">
-                      <img class="step__flag-image" src="img/flag-czech.png" alt="Флаг Чехии" width="35" height="24">
+                      <img class="step__flag-image" src="img/flag-czech.svg" alt="Флаг Чехии" width="35" height="24">
                     </div>
                   </div>
                   <div class="step__activity-country-body">
