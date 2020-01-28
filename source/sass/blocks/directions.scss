@@ -39,6 +39,7 @@
 
 .directions__list {
   min-height: 587px;
+
   @include list-reset;
   margin-bottom: 26px;
 }
@@ -257,7 +258,7 @@
     order: -1;
     width: 70%;
     min-height: 140px;
-    margin-top: 0px;
+    margin-top: 0;
     padding: 0;
     padding-top: 29px;
     padding-left: 30px;
@@ -350,7 +351,7 @@
   }
 
   .directions__text {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .directions__list {
@@ -358,7 +359,7 @@
     order: 1;
     min-height: 450px;
     margin-right: auto;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding-left: 71px;
   }
 

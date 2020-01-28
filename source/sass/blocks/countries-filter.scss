@@ -35,6 +35,7 @@
 
 .countries-filter__land-list {
   min-height: 108px;
+
   @include list-reset;
   margin-top: 29px;
   margin-left: 25px;
@@ -88,10 +89,6 @@
   background: transparent;
   border: 0;
   cursor: pointer;
-
-  &--close {
-    margin-right: 2px;
-  }
 }
 
 .countries-filter__button-text {
@@ -109,6 +106,8 @@
 }
 
 .countries-filter__button--close {
+  margin-right: 2px;
+
   .countries-filter__icon--dots {
     display: none;
   }
@@ -243,81 +242,31 @@
   fill: #192144;
 }
 
-.countries-filter__letter-button--1:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-1"],
-.countries-filter__letter-button--2:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-2"],
-.countries-filter__letter-button--3:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-3"],
-.countries-filter__letter-button--4:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-4"],
-.countries-filter__letter-button--5:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-5"],
-.countries-filter__letter-button--6:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-6"],
-.countries-filter__letter-button--7:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-7"],
-.countries-filter__letter-button--8:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-8"],
-.countries-filter__letter-button--9:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-9"],
-.countries-filter__letter-button--10:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-10"],
-.countries-filter__letter-button--11:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-11"],
-.countries-filter__letter-button--12:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-12"],
-.countries-filter__letter-button--13:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-13"],
-.countries-filter__letter-button--14:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-14"],
-.countries-filter__letter-button--15:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-15"],
-.countries-filter__letter-button--16:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-16"],
-.countries-filter__letter-button--17:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-17"],
-.countries-filter__letter-button--18:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-18"],
-.countries-filter__letter-button--19:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-19"],
-.countries-filter__letter-button--20:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-20"],
-.countries-filter__letter-button--21:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-21"],
-.countries-filter__letter-button--22:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-22"],
-.countries-filter__letter-button--23:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-23"],
-.countries-filter__letter-button--24:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-24"],
-.countries-filter__letter-button--25:checked
-  ~ .countries-filter__letter-list
-  .countries-filter__letter-button[for="letter-25"] {
+.countries-filter__letter-button--1:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-1"],
+.countries-filter__letter-button--2:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-2"],
+.countries-filter__letter-button--3:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-3"],
+.countries-filter__letter-button--4:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-4"],
+.countries-filter__letter-button--5:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-5"],
+.countries-filter__letter-button--6:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-6"],
+.countries-filter__letter-button--7:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-7"],
+.countries-filter__letter-button--8:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-8"],
+.countries-filter__letter-button--9:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-9"],
+.countries-filter__letter-button--10:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-10"],
+.countries-filter__letter-button--11:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-11"],
+.countries-filter__letter-button--12:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-12"],
+.countries-filter__letter-button--13:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-13"],
+.countries-filter__letter-button--14:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-14"],
+.countries-filter__letter-button--15:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-15"],
+.countries-filter__letter-button--16:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-16"],
+.countries-filter__letter-button--17:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-17"],
+.countries-filter__letter-button--18:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-18"],
+.countries-filter__letter-button--19:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-19"],
+.countries-filter__letter-button--20:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-20"],
+.countries-filter__letter-button--21:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-21"],
+.countries-filter__letter-button--22:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-22"],
+.countries-filter__letter-button--23:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-23"],
+.countries-filter__letter-button--24:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-24"],
+.countries-filter__letter-button--25:checked ~ .countries-filter__letter-list .countries-filter__letter-button[for="letter-25"] {
   color: #ffffff;
   background-color: #1d2e5b;
 
@@ -327,81 +276,31 @@
   }
 }
 
-.countries-filter__letter-button--1:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--1,
-.countries-filter__letter-button--2:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--2,
-.countries-filter__letter-button--3:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--3,
-.countries-filter__letter-button--4:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--4,
-.countries-filter__letter-button--5:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--5,
-.countries-filter__letter-button--6:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--6,
-.countries-filter__letter-button--7:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--7,
-.countries-filter__letter-button--8:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--8,
-.countries-filter__letter-button--9:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--9,
-.countries-filter__letter-button--10:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--10,
-.countries-filter__letter-button--11:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--11,
-.countries-filter__letter-button--12:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--12,
-.countries-filter__letter-button--13:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--13,
-.countries-filter__letter-button--14:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--14,
-.countries-filter__letter-button--15:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--15,
-.countries-filter__letter-button--16:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--16,
-.countries-filter__letter-button--17:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--17,
-.countries-filter__letter-button--18:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--18,
-.countries-filter__letter-button--19:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--19,
-.countries-filter__letter-button--20:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--20,
-.countries-filter__letter-button--21:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--21,
-.countries-filter__letter-button--22:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--22,
-.countries-filter__letter-button--23:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--23,
-.countries-filter__letter-button--24:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--24,
-.countries-filter__letter-button--25:checked
-  ~ .countries-filter__all-countries
-  .countries-filter__countries-list--25 {
+.countries-filter__letter-button--1:checked ~ .countries-filter__all-countries .countries-filter__countries-list--1,
+.countries-filter__letter-button--2:checked ~ .countries-filter__all-countries .countries-filter__countries-list--2,
+.countries-filter__letter-button--3:checked ~ .countries-filter__all-countries .countries-filter__countries-list--3,
+.countries-filter__letter-button--4:checked ~ .countries-filter__all-countries .countries-filter__countries-list--4,
+.countries-filter__letter-button--5:checked ~ .countries-filter__all-countries .countries-filter__countries-list--5,
+.countries-filter__letter-button--6:checked ~ .countries-filter__all-countries .countries-filter__countries-list--6,
+.countries-filter__letter-button--7:checked ~ .countries-filter__all-countries .countries-filter__countries-list--7,
+.countries-filter__letter-button--8:checked ~ .countries-filter__all-countries .countries-filter__countries-list--8,
+.countries-filter__letter-button--9:checked ~ .countries-filter__all-countries .countries-filter__countries-list--9,
+.countries-filter__letter-button--10:checked ~ .countries-filter__all-countries .countries-filter__countries-list--10,
+.countries-filter__letter-button--11:checked ~ .countries-filter__all-countries .countries-filter__countries-list--11,
+.countries-filter__letter-button--12:checked ~ .countries-filter__all-countries .countries-filter__countries-list--12,
+.countries-filter__letter-button--13:checked ~ .countries-filter__all-countries .countries-filter__countries-list--13,
+.countries-filter__letter-button--14:checked ~ .countries-filter__all-countries .countries-filter__countries-list--14,
+.countries-filter__letter-button--15:checked ~ .countries-filter__all-countries .countries-filter__countries-list--15,
+.countries-filter__letter-button--16:checked ~ .countries-filter__all-countries .countries-filter__countries-list--16,
+.countries-filter__letter-button--17:checked ~ .countries-filter__all-countries .countries-filter__countries-list--17,
+.countries-filter__letter-button--18:checked ~ .countries-filter__all-countries .countries-filter__countries-list--18,
+.countries-filter__letter-button--19:checked ~ .countries-filter__all-countries .countries-filter__countries-list--19,
+.countries-filter__letter-button--20:checked ~ .countries-filter__all-countries .countries-filter__countries-list--20,
+.countries-filter__letter-button--21:checked ~ .countries-filter__all-countries .countries-filter__countries-list--21,
+.countries-filter__letter-button--22:checked ~ .countries-filter__all-countries .countries-filter__countries-list--22,
+.countries-filter__letter-button--23:checked ~ .countries-filter__all-countries .countries-filter__countries-list--23,
+.countries-filter__letter-button--24:checked ~ .countries-filter__all-countries .countries-filter__countries-list--24,
+.countries-filter__letter-button--25:checked ~ .countries-filter__all-countries .countries-filter__countries-list--25 {
   display: block;
 }
 
@@ -427,6 +326,7 @@
     flex-wrap: wrap;
     width: 430px;
     min-height: 29px;
+
     @include list-reset;
     margin-left: 33px;
   }
@@ -457,10 +357,6 @@
     margin-left: auto;
     padding-bottom: 24px;
     line-height: 24px;
-
-    &--close {
-      margin-right: 29px;
-    }
   }
 
   .countries-filter__button-text {
@@ -503,6 +399,8 @@
   }
 
   .countries-filter__button--close {
+    margin-right: 29px;
+
     .countries-filter__button-text--close {
       display: block;
     }

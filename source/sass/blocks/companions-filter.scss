@@ -192,17 +192,13 @@
   }
 }
 
-.companions-filter__accordion-item
-  input:checked
-  + .companions-filter__accordion-checkbox {
+.companions-filter__accordion-item input:checked + .companions-filter__accordion-checkbox {
   &::after {
     display: block;
   }
 }
 
-.companions-filter__accordion-item
-  input:focus
-  + .companions-filter__accordion-checkbox {
+.companions-filter__accordion-item input:focus + .companions-filter__accordion-checkbox {
   &::before {
     box-shadow: 0 0 0 2px rgba(77, 144, 254, 0.5);
   }
@@ -253,9 +249,7 @@
   cursor: pointer;
 }
 
-.companions-filter__transport-item
-  input:checked
-  + .companions-filter__transport-checkbox {
+.companions-filter__transport-item input:checked + .companions-filter__transport-checkbox {
   .transport-type__icon {
     fill: #1d2e5b;
     opacity: 1;
@@ -538,7 +532,7 @@
     flex-wrap: nowrap;
     width: auto;
     margin-top: 22px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
     &--transport {
       display: flex;

@@ -39,6 +39,7 @@
 .rates__list {
   position: relative;
   min-height: 199px;
+
   @include list-reset;
   padding-left: 24px;
   padding-right: 45px;
@@ -238,7 +239,7 @@
       content: "";
       position: absolute;
       top: -43px;
-      right: 0px;
+      right: 0;
       z-index: -1;
       width: 198px;
       height: 285px;
@@ -289,7 +290,7 @@
     }
 
     &--three::before {
-      top: 0px;
+      top: 0;
       line-height: 70px;
     }
 

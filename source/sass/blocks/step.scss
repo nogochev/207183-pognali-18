@@ -40,6 +40,7 @@
 
 .step__list {
   display: none;
+
   @include list-reset;
 }
 
@@ -140,7 +141,7 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 2px;
-  padding: 0px 31px 0px 33px;
+  padding: 0 31px 0 33px;
   letter-spacing: 0.2px;
   background: none;
   border: none;
@@ -1475,6 +1476,7 @@
 
   .step__activity-country-name {
     letter-spacing: -0.2px;
+
     &::after {
       display: none;
     }

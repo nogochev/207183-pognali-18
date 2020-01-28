@@ -5,7 +5,7 @@
 
 .companions-catalog__item {
   margin-bottom: 10px;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .companions-catalog__show-more {
@@ -50,6 +50,7 @@
 
 .companions-catalog__pagination-list {
   display: none;
+
   @include list-reset;
 }
 
@@ -179,6 +180,7 @@
 
   .companions-catalog__pagination-list {
     display: flex;
+
     @include list-reset;
   }
 
@@ -195,7 +197,7 @@
   .companions-catalog__pagination-button {
     position: relative;
     width: 25px;
-    margin: 0px 14px;
+    margin: 0 14px;
     padding: 0;
     font-size: 0;
     background: transparent;

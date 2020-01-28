@@ -78,6 +78,7 @@
 .companions__list {
   display: flex;
   flex-direction: column;
+
   @include list-reset;
   margin-bottom: 10px;
 }
@@ -126,7 +127,7 @@
   width: 58px;
   height: 58px;
   padding-top: 4px;
-  color: #fff;
+  color: #ffffff;
   background-color: rgba(#000000, 0.6);
   border-radius: 50px;
 }
@@ -177,7 +178,7 @@
 }
 
 .companions__item:nth-of-type(2) .companions__level {
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .companions__countries {
@@ -186,6 +187,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   @include list-reset;
   margin-top: -12px;
   margin-bottom: -17px;
@@ -233,7 +235,7 @@
     color: rgba(#1d2e5b, 0.7);
   }
 
-  &:hover {
+  &:active {
     color: rgba(#1d2e5b, 0.3);
   }
 }
@@ -340,8 +342,8 @@
     min-height: 1234px;
     padding: 0 40px;
     padding-top: 117px;
-    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat 408px
-        60px,
+    background:
+      url("../../img/rogovaya-back-desktop@1x.png") no-repeat 408px 60px,
       url("../../img/smolov-back-desktop@1x.png") no-repeat 40px 406px;
     background-size: 285px 285px, 143px 143px;
 
@@ -429,7 +431,7 @@
   }
 
   .companions__item:nth-of-type(2) .companions__level-progress {
-    left: 0px;
+    left: 0;
   }
 
   .companions__item:nth-of-type(2) .companions__level-count {
@@ -498,8 +500,8 @@
     padding: 0 60px;
     padding-top: 129px;
     padding-bottom: 60px;
-    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat 191px
-        389px,
+    background:
+      url("../../img/rogovaya-back-desktop@1x.png") no-repeat 191px 389px,
       url("../../img/smolov-back-desktop@1x.png") no-repeat 547px 137px;
     background-size: 285px 285px, 143px 143px;
 

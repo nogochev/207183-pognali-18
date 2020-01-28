@@ -22,6 +22,7 @@
 .choice-country__letter-list {
   display: flex;
   flex-wrap: wrap;
+
   @include list-reset;
   margin-top: 0;
   margin-bottom: 0;
@@ -56,6 +57,7 @@
 
 .choice-country__all-countries {
   flex-grow: 1;
+
   @include list-reset;
   margin: 0;
 }
@@ -66,6 +68,7 @@
 
 .choice-country__countries-list {
   display: none;
+
   @include list-reset;
   margin: 0;
   padding-top: 56px;
@@ -93,31 +96,31 @@
   }
 }
 
-.choice-country__letter-button--1:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-1"],
-.choice-country__letter-button--2:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-2"],
-.choice-country__letter-button--3:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-3"],
-.choice-country__letter-button--4:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-4"],
-.choice-country__letter-button--5:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-5"],
-.choice-country__letter-button--6:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-6"],
-.choice-country__letter-button--7:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-7"],
-.choice-country__letter-button--8:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-8"],
-.choice-country__letter-button--9:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-9"],
-.choice-country__letter-button--10:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-10"],
-.choice-country__letter-button--11:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-11"],
-.choice-country__letter-button--12:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-12"],
-.choice-country__letter-button--13:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-13"],
-.choice-country__letter-button--14:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-14"],
-.choice-country__letter-button--15:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-15"],
-.choice-country__letter-button--16:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-16"],
-.choice-country__letter-button--17:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-17"],
-.choice-country__letter-button--18:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-18"],
-.choice-country__letter-button--19:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-19"],
-.choice-country__letter-button--20:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-20"],
-.choice-country__letter-button--21:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-21"],
-.choice-country__letter-button--22:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-22"],
-.choice-country__letter-button--23:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-23"],
-.choice-country__letter-button--24:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-24"],
-.choice-country__letter-button--25:checked~.choice-country__letter-list .choice-country__letter-label-button[for="country-letter-25"] {
+.choice-country__letter-button--1:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-1"],
+.choice-country__letter-button--2:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-2"],
+.choice-country__letter-button--3:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-3"],
+.choice-country__letter-button--4:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-4"],
+.choice-country__letter-button--5:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-5"],
+.choice-country__letter-button--6:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-6"],
+.choice-country__letter-button--7:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-7"],
+.choice-country__letter-button--8:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-8"],
+.choice-country__letter-button--9:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-9"],
+.choice-country__letter-button--10:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-10"],
+.choice-country__letter-button--11:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-11"],
+.choice-country__letter-button--12:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-12"],
+.choice-country__letter-button--13:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-13"],
+.choice-country__letter-button--14:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-14"],
+.choice-country__letter-button--15:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-15"],
+.choice-country__letter-button--16:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-16"],
+.choice-country__letter-button--17:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-17"],
+.choice-country__letter-button--18:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-18"],
+.choice-country__letter-button--19:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-19"],
+.choice-country__letter-button--20:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-20"],
+.choice-country__letter-button--21:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-21"],
+.choice-country__letter-button--22:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-22"],
+.choice-country__letter-button--23:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-23"],
+.choice-country__letter-button--24:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-24"],
+.choice-country__letter-button--25:checked ~ .choice-country__letter-list .choice-country__letter-label-button[for="country-letter-25"] {
   background-color: #edeff6;
 
   @media (min-width: $tablet-width) {
@@ -127,31 +130,31 @@
   }
 }
 
-.choice-country__letter-button--1:checked~.choice-country__all-countries .choice-country__countries-list--1,
-.choice-country__letter-button--2:checked~.choice-country__all-countries .choice-country__countries-list--2,
-.choice-country__letter-button--3:checked~.choice-country__all-countries .choice-country__countries-list--3,
-.choice-country__letter-button--4:checked~.choice-country__all-countries .choice-country__countries-list--4,
-.choice-country__letter-button--5:checked~.choice-country__all-countries .choice-country__countries-list--5,
-.choice-country__letter-button--6:checked~.choice-country__all-countries .choice-country__countries-list--6,
-.choice-country__letter-button--7:checked~.choice-country__all-countries .choice-country__countries-list--7,
-.choice-country__letter-button--8:checked~.choice-country__all-countries .choice-country__countries-list--8,
-.choice-country__letter-button--9:checked~.choice-country__all-countries .choice-country__countries-list--9,
-.choice-country__letter-button--10:checked~.choice-country__all-countries .choice-country__countries-list--10,
-.choice-country__letter-button--11:checked~.choice-country__all-countries .choice-country__countries-list--11,
-.choice-country__letter-button--12:checked~.choice-country__all-countries .choice-country__countries-list--12,
-.choice-country__letter-button--13:checked~.choice-country__all-countries .choice-country__countries-list--13,
-.choice-country__letter-button--14:checked~.choice-country__all-countries .choice-country__countries-list--14,
-.choice-country__letter-button--15:checked~.choice-country__all-countries .choice-country__countries-list--15,
-.choice-country__letter-button--16:checked~.choice-country__all-countries .choice-country__countries-list--16,
-.choice-country__letter-button--17:checked~.choice-country__all-countries .choice-country__countries-list--17,
-.choice-country__letter-button--18:checked~.choice-country__all-countries .choice-country__countries-list--18,
-.choice-country__letter-button--19:checked~.choice-country__all-countries .choice-country__countries-list--19,
-.choice-country__letter-button--20:checked~.choice-country__all-countries .choice-country__countries-list--20,
-.choice-country__letter-button--21:checked~.choice-country__all-countries .choice-country__countries-list--21,
-.choice-country__letter-button--22:checked~.choice-country__all-countries .choice-country__countries-list--22,
-.choice-country__letter-button--23:checked~.choice-country__all-countries .choice-country__countries-list--23,
-.choice-country__letter-button--24:checked~.choice-country__all-countries .choice-country__countries-list--24,
-.choice-country__letter-button--25:checked~.choice-country__all-countries .choice-country__countries-list--25 {
+.choice-country__letter-button--1:checked ~ .choice-country__all-countries .choice-country__countries-list--1,
+.choice-country__letter-button--2:checked ~ .choice-country__all-countries .choice-country__countries-list--2,
+.choice-country__letter-button--3:checked ~ .choice-country__all-countries .choice-country__countries-list--3,
+.choice-country__letter-button--4:checked ~ .choice-country__all-countries .choice-country__countries-list--4,
+.choice-country__letter-button--5:checked ~ .choice-country__all-countries .choice-country__countries-list--5,
+.choice-country__letter-button--6:checked ~ .choice-country__all-countries .choice-country__countries-list--6,
+.choice-country__letter-button--7:checked ~ .choice-country__all-countries .choice-country__countries-list--7,
+.choice-country__letter-button--8:checked ~ .choice-country__all-countries .choice-country__countries-list--8,
+.choice-country__letter-button--9:checked ~ .choice-country__all-countries .choice-country__countries-list--9,
+.choice-country__letter-button--10:checked ~ .choice-country__all-countries .choice-country__countries-list--10,
+.choice-country__letter-button--11:checked ~ .choice-country__all-countries .choice-country__countries-list--11,
+.choice-country__letter-button--12:checked ~ .choice-country__all-countries .choice-country__countries-list--12,
+.choice-country__letter-button--13:checked ~ .choice-country__all-countries .choice-country__countries-list--13,
+.choice-country__letter-button--14:checked ~ .choice-country__all-countries .choice-country__countries-list--14,
+.choice-country__letter-button--15:checked ~ .choice-country__all-countries .choice-country__countries-list--15,
+.choice-country__letter-button--16:checked ~ .choice-country__all-countries .choice-country__countries-list--16,
+.choice-country__letter-button--17:checked ~ .choice-country__all-countries .choice-country__countries-list--17,
+.choice-country__letter-button--18:checked ~ .choice-country__all-countries .choice-country__countries-list--18,
+.choice-country__letter-button--19:checked ~ .choice-country__all-countries .choice-country__countries-list--19,
+.choice-country__letter-button--20:checked ~ .choice-country__all-countries .choice-country__countries-list--20,
+.choice-country__letter-button--21:checked ~ .choice-country__all-countries .choice-country__countries-list--21,
+.choice-country__letter-button--22:checked ~ .choice-country__all-countries .choice-country__countries-list--22,
+.choice-country__letter-button--23:checked ~ .choice-country__all-countries .choice-country__countries-list--23,
+.choice-country__letter-button--24:checked ~ .choice-country__all-countries .choice-country__countries-list--24,
+.choice-country__letter-button--25:checked ~ .choice-country__all-countries .choice-country__countries-list--25 {
   display: block;
 }
 
