@@ -342,7 +342,7 @@
 
 @media (min-width: $desktop-width) {
   .profile {
-    padding-bottom: 65px;
+    padding-bottom: 64px;
   }
 
   .profile__container {
@@ -390,13 +390,14 @@
   .profile__level {
     width: 94px;
     height: 94px;
+    margin-right: 1px;
     margin-bottom: 12px;
-    padding-top: 10px;
+    padding-top: 6px;
   }
 
   .profile__level-progress {
     top: 1px;
-    left: 1px;
+    left: 2px;
   }
 
   .profile__level-number {
@@ -412,14 +413,14 @@
     justify-content: flex-end;
     width: 100%;
     margin-top: -66px;
-    margin-bottom: 27px;
-    padding-right: 94px;
+    margin-bottom: 26px;
+    padding-right: 95px;
   }
 
   .profile__upload-button {
     width: 190px;
-    height: 47px;
-    padding: 12px 50px 8px 67px;
+    min-height: 30px;
+    padding: 9px 50px 9px 68px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
@@ -430,7 +431,6 @@
 
   .profile__fieldset {
     width: 730px;
-    // min-height: 94px;
     height: 94px;
 
     &--transport {
@@ -438,14 +438,21 @@
       width: 384px;
       height: auto;
       margin: 0;
+      margin-top: -1px;
     }
   }
 
   .profile__fieldset-title {
     &--tags {
-      bottom: -11px;
+      bottom: -9px;
       left: 22px;
       transform: none;
+      letter-spacing: 2.1px;
+    }
+
+    &--transport {
+      padding-right: 19px;
+      padding-left: 20px;
     }
   }
 

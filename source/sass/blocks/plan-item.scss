@@ -134,7 +134,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 34px 23px 38px;
+    padding: 22px 34px 25px 39px;
 
     &::before {
       display: none;
@@ -144,12 +144,12 @@
   .plan-item__title {
     flex-direction: row;
     justify-content: flex-start;
-    width: 619px;
+    width: 620px;
     margin-bottom: 0;
   }
 
   .plan-item__number {
-    margin-right: 30px;
+    margin-right: 32px;
   }
 
   .plan-item__container {

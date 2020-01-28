@@ -174,7 +174,7 @@
 @media (min-width: $tablet-width) {
   .calendar__month-selection {
     margin-bottom: 30px;
-    padding: 21px 15px 21px 17px;
+    padding: 21px 16px 21px 17px;
   }
 
   .calendar__month-button {
@@ -183,7 +183,7 @@
   }
 
   .calendar__month-name {
-    margin-right: 3px;
+    margin-right: 2px;
     font-size: 36px;
     line-height: normal;
   }
@@ -245,7 +245,15 @@
 @media (min-width: $desktop-width) {
   .calendar__month-selection {
     margin-bottom: 0;
-    padding: 26px 0 20px;
+    padding: 21px 0 19px 0;
+  }
+
+  .calendar__month-button {
+    height: 45px;
+  }
+
+  .calendar__month-name {
+    margin-right: 0;
   }
 
   .calendar__day {
