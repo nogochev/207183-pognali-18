@@ -11,8 +11,8 @@
 .companions-catalog__show-more {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 19px;
+  margin-top: 18px;
+  margin-bottom: 21px;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
@@ -36,7 +36,7 @@
 
 .companions-catalog__show-more-icon {
   position: absolute;
-  top: 4px;
+  top: 6px;
   left: -1px;
   fill: #1d2e5b;
 }
@@ -149,19 +149,20 @@
   }
 
   .companions-catalog__show-more {
-    margin-top: 46px;
-    margin-bottom: 47px;
+    margin-top: 44px;
+    margin-bottom: 49px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .companions-catalog__show-more-text {
-    padding-left: 42px;
+    padding-left: 43px;
+    letter-spacing: 0.1px;
   }
 
   .companions-catalog__show-more-icon {
-    top: -1px;
-    left: -8px;
+    top: 1px;
+    left: -7px;
     width: 27px;
     height: 27px;
   }
@@ -226,8 +227,8 @@
   }
 
   .companions-catalog__show-more {
-    margin-top: 66px;
-    margin-bottom: 66px;
+    margin-top: 64px;
+    margin-bottom: 68px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -237,7 +238,7 @@
   }
 
   .companions-catalog__show-more-icon {
-    top: -1px;
+    top: 1px;
     left: -8px;
     width: 27px;
     height: 27px;

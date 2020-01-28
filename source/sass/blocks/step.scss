@@ -1,6 +1,6 @@
 .step {
   background-color: #ffffff;
-  padding: 24px 25px 22px;
+  padding: 22px 25px 22px;
   border-radius: 10px;
 
   &--two {
@@ -16,13 +16,13 @@
   margin-bottom: 21px;
 
   &--entertainment {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 }
 
 .step__title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   margin-left: -1px;
   font-weight: 700;
   font-size: 20px;
@@ -33,6 +33,7 @@
 .step__description {
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 5px;
   font-weight: 400;
   line-height: 22px;
 }
@@ -84,7 +85,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   &--days {
     margin-bottom: 21px;
@@ -117,18 +118,18 @@
   display: flex;
   width: 230px;
   margin-left: -5px;
-  padding: 12px 24px 10px 46px;
+  padding: 11px 24px 11px 46px;
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: -0.5px;
   border: none;
 
   &--step-two {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
   }
 
   &--step-three {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -138,6 +139,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 2px;
   padding: 0;
   background: none;
   border: none;
@@ -154,7 +156,7 @@
 }
 
 .step__label {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   margin-left: -1px;
   font-weight: 500;
   line-height: 16px;
@@ -218,7 +220,7 @@
 .step__number-input {
   display: flex;
   width: 100%;
-  padding: 15px 14px 10px 17px;
+  padding: 12px 14px 11px 17px;
   font-family: inherit;
   font-weight: 500;
   font-size: 15px;
@@ -252,7 +254,7 @@
   display: flex;
   align-items: center;
   height: 25px;
-  padding-top: 5px;
+  padding-top: 2px;
   padding-left: 39px;
   font-weight: 400;
   font-size: 15px;
@@ -315,7 +317,7 @@
 }
 
 .step__country-choice {
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 }
 
 .step__country-wrapper {
@@ -562,6 +564,7 @@
   z-index: 20;
   width: 35px;
   height: 24px;
+  padding-top: 1px;
   font-size: 0;
   background-color: transparent;
   border-radius: 6.4px;
@@ -655,10 +658,10 @@
 .step__activity-country {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   &:last-child {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
 }
 
@@ -687,7 +690,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 10px;
     left: -3px;
     width: 6px;
     height: 6px;
@@ -700,7 +703,7 @@
     position: absolute;
     width: 13px;
     height: 2px;
-    top: 11px;
+    top: 12px;
     left: -14px;
     background-color: #1d2e5b;
     border-radius: 1px;
@@ -732,6 +735,7 @@
   position: relative;
   z-index: 1;
   height: 220px;
+  padding-top: 1px;
 }
 
 .step__activity-textarea {
@@ -739,7 +743,7 @@
   z-index: 90;
   width: 100%;
   height: 220px;
-  padding: 9px 13px 9px 13px;
+  padding: 8px 13px 9px 14px;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;

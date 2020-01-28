@@ -34,7 +34,7 @@
   align-self: flex-start;
   width: 100%;
   height: 1px;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   background-color: rgba(#000, 0.05);
   border: none;
 }
@@ -53,14 +53,14 @@
     width: $tablet-width;
     min-height: 154px;
     padding: 0 40px;
-    padding-top: 45px;
+    padding-top: 43px;
   }
 
   .page-footer__logo {
     align-self: flex-start;
     width: 166px;
     height: 42px;
-    margin-top: 11px;
+    margin-top: 13px;
     margin-right: 88px;
     margin-bottom: 0;
     background-image: url("../../img/logo-tablet-blue@1x.png");
@@ -73,7 +73,7 @@
   }
 
   .page-footer__social {
-    margin-top: 3px;
+    margin-top: 5px;
     margin-right: auto;
     margin-bottom: 0;
   }
@@ -88,11 +88,11 @@
     justify-content: flex-start;
     width: $desktop-width;
     padding: 0 60px;
-    padding-top: 45px;
+    padding-top: 43px;
   }
 
   .page-footer__logo {
-    margin-top: 6px;
+    margin-top: 8px;
     margin-right: 371px;
     width: 198px;
     height: 52px;

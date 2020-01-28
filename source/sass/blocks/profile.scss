@@ -42,8 +42,8 @@
   align-items: center;
   width: 100px;
   height: 100px;
-  padding-top: 6px;
-  padding-left: 2px;
+  padding-top: 2px;
+  padding-left: 4px;
 }
 
 .profile__level-progress {
@@ -55,7 +55,7 @@
 
 .profile__level-number {
   position: relative;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   font-weight: 700;
   font-size: 38px;
   line-height: 38px;
@@ -64,8 +64,8 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 3px;
-    left: -3px;
+    bottom: 1px;
+    left: -4px;
     width: 49px;
     height: 2px;
     background-color: #cbced9;
@@ -87,6 +87,8 @@
   display: flex;
   align-items: center;
   height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 74px;
   letter-spacing: 0.2px;
   color: #1d2e5b;
@@ -110,7 +112,7 @@
 
 .profile__fieldset {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   &--transport {
     margin-bottom: 33px;
@@ -123,7 +125,7 @@
 .profile__fieldset-title {
   position: absolute;
   z-index: 10;
-  top: -8px;
+  top: -9px;
   left: 50%;
   margin: 0;
   padding: 0 17px;
@@ -147,7 +149,7 @@
 .profile__fieldset-textarea {
   width: 100%;
   height: 100%;
-  padding: 22px 24px 21px;
+  padding: 21px 25px 22px;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -219,12 +221,12 @@
   }
 }
 
-.profile__transport-item input:checked+.profile__transport-type svg {
+.profile__transport-item input:checked + .profile__transport-type svg {
   fill: #1d2e5b;
   opacity: 1;
 }
 
-.profile__transport-item input:focus+.profile__transport-type {
+.profile__transport-item input:focus + .profile__transport-type {
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
