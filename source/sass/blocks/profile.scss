@@ -86,10 +86,10 @@
 .profile__upload-button {
   display: flex;
   align-items: center;
-  height: 40px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 74px;
+  min-height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 75px;
   letter-spacing: 0.2px;
   color: #1d2e5b;
   background-color: #dfe3f0;
@@ -265,13 +265,13 @@
   }
 
   .profile__level {
-    margin-left: -4px;
-    padding-top: 8px;
+    margin-left: -6px;
+    padding-top: 3px;
   }
 
   .profile__level-progress {
     top: 3px;
-    left: 4px;
+    left: 6px;
     width: 94px;
     height: 94px;
   }
@@ -283,26 +283,26 @@
   }
 
   .profile__upload-button {
-    padding: 10px 223px 8px 230px;
-    height: 60px;
+    padding: 4px 223px 6px 230px;
+    min-height: 60px;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 1.9px;
     border-radius: 10px;
   }
 
   .profile__fieldset {
     order: 4;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 1px;
 
     &--transport {
       order: 1;
       width: 308px;
       margin-top: -1px;
       margin-bottom: -97px;
-      margin-left: -1px;
+      margin-left: -2px;
       padding: 24px 25px 25px;
     }
   }
@@ -314,19 +314,19 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.7px;
 
     &--transport {
-      bottom: -11px;
+      bottom: -9px;
     }
 
     &--tags {
-      bottom: -6px;
+      bottom: -5px;
     }
   }
 
   .profile__fieldset-textarea {
-    padding: 34px 39px 10px;
+    padding: 32px 39px 12px;
     font-size: 20px;
     line-height: 24px;
   }

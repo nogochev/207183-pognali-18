@@ -173,16 +173,17 @@
 
 @media (min-width: $tablet-width) {
   .calendar__month-selection {
-    margin-bottom: 31px;
-    padding: 27px 17px 19px;
+    margin-bottom: 30px;
+    padding: 21px 15px 21px 17px;
   }
 
   .calendar__month-button {
     width: 19px;
-    height: 34px;
+    height: 43px;
   }
 
   .calendar__month-name {
+    margin-right: 3px;
     font-size: 36px;
     line-height: normal;
   }

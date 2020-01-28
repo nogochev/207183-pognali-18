@@ -140,7 +140,8 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 2px;
-  padding: 0;
+  padding: 0px 31px 0px 33px;
+  letter-spacing: 0.2px;
   background: none;
   border: none;
 
@@ -194,6 +195,7 @@
   background-repeat: no-repeat;
   border: none;
   opacity: 0.3;
+  cursor: pointer;
 
   &--reduce {
     left: -1px;
@@ -796,17 +798,19 @@
 
 @media (min-width: $tablet-width) {
   .step {
-    padding: 48px 43px 55px 43px;
+    padding: 45px 43px 55px 43px;
     border-radius: 30px;
 
     &--two {
       margin-bottom: 51px;
-      padding-bottom: 40px;
+      padding-bottom: 42px;
+      padding-right: 46px;
     }
 
     &--three {
       margin-bottom: 52px;
-      padding-bottom: 39px;
+      padding-bottom: 41px;
+      padding-right: 46px;
     }
   }
 
@@ -815,16 +819,16 @@
 
     &--route {
       max-width: 406px;
-      margin-bottom: 33px;
+      margin-bottom: 35px;
     }
 
     &--entertainment {
-      margin-bottom: 33px;
+      margin-bottom: 35px;
     }
   }
 
   .step__title {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
     margin-left: 0;
     font-size: 36px;
     line-height: 36px;
@@ -833,6 +837,7 @@
 
   .step__description {
     max-width: 500px;
+    padding-right: 0;
     font-size: 20px;
     line-height: 24px;
   }
@@ -849,7 +854,7 @@
 
     &--days {
       order: 2;
-      margin-top: 53px;
+      margin-top: 51px;
       margin-bottom: 59px;
     }
 
@@ -861,7 +866,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -26px;
+      top: -24px;
       left: 0;
       width: 100%;
       height: 1px;
@@ -889,8 +894,8 @@
 
   .step__button-next {
     width: auto;
-    margin-left: 0;
-    padding: 30px 77px 27px 34px;
+    margin-left: 1px;
+    padding: 28px 78px 29px 33px;
     font-size: 24px;
     line-height: 24px;
     letter-spacing: normal;
@@ -898,11 +903,13 @@
     border-radius: 20px;
 
     &--step-two {
+      margin-left: 0;
       padding-left: 33px;
     }
 
     &--step-three {
-      padding-right: 138px;
+      margin-left: 0;
+      padding-right: 139px;
     }
   }
 
@@ -910,9 +917,11 @@
     position: relative;
     justify-content: flex-end;
     width: 181px;
+    margin-right: -4px;
     padding: 0;
     font-size: 24px;
     text-transform: none;
+    letter-spacing: normal;
   }
 
   .button__arrow {
@@ -920,16 +929,16 @@
   }
 
   .step__label {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     margin-left: -1px;
     font-size: 20px;
     line-height: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.9px;
   }
 
   .step__label-essence {
     margin-right: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -952,18 +961,19 @@
   }
 
   .step__number-input {
-    padding: 24px 14px 22px 17px;
+    padding: 21px 14px 23px 15px;
     font-size: 20px;
     line-height: 18px;
   }
 
   .step__children-checkbox {
     height: 36px;
+    padding-top: 0;
     padding-left: 59px;
     font-weight: 500;
     font-size: 20px;
     line-height: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.9px;
     text-transform: uppercase;
     color: #1d2e5b;
 
@@ -983,22 +993,22 @@
   }
 
   .step__calendar {
-    margin-bottom: 46px;
+    margin-bottom: 47px;
   }
 
   .step__country-choice {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 42px;
-    padding-bottom: 49px;
+    padding-top: 41px;
+    padding-bottom: 50px;
     border-top: 1px solid #d6d9e6;
 
     &::after {
       content: "";
       position: absolute;
       top: 0;
-      right: 137px;
+      right: 133px;
       width: 1px;
       height: 100%;
       background-color: #d6d9e6;
@@ -1021,13 +1031,13 @@
 
   .step__country-select {
     width: 369px;
-    padding: 27px 27px 23px;
+    padding: 25px 27px 25px 26px;
     font-size: 20px;
     line-height: 18px;
-    letter-spacing: 2;
+    letter-spacing: 1.8px;
 
     &--selected::before {
-      top: 29px;
+      top: 30px;
       right: 26px;
       width: 17px;
       height: 9px;
@@ -1042,8 +1052,8 @@
 
     &--choose {
       &::before {
-        top: 27px;
-        right: -34px;
+        top: 25px;
+        right: -35px;
         width: 15px;
         height: 15px;
         background-color: #ffffff;
@@ -1051,7 +1061,7 @@
 
       &::after {
         top: 30px;
-        right: 27px;
+        right: 26px;
         width: 17px;
         height: 9px;
       }
@@ -1059,7 +1069,7 @@
 
     &--add {
       &::before {
-        top: 27px;
+        top: 25px;
         right: -34px;
         z-index: 10;
         width: 15px;
@@ -1097,7 +1107,7 @@
 
   .step__flag-wrapper {
     width: auto;
-    padding-left: 32px;
+    padding-left: 34px;
     border: none;
 
     &::before {
@@ -1112,7 +1122,7 @@
     &--big {
       width: 70px;
       height: 47px;
-      padding-top: 0;
+      padding-top: 1px;
     }
   }
 
@@ -1123,6 +1133,7 @@
     width: 22px;
     height: 22px;
     margin-bottom: 3px;
+    margin-right: -6px;
     background-color: transparent;
     background-size: contain;
     opacity: 0.1;
@@ -1138,8 +1149,8 @@
   }
 
   .step__activity {
-    padding-top: 27px;
-    padding-right: 31px;
+    padding-top: 26px;
+    padding-right: 30px;
     border-top: 1px solid #d6d9e6;
   }
 
@@ -1147,7 +1158,7 @@
     margin-bottom: 43px;
 
     &:last-child {
-      margin-bottom: 47px;
+      margin-bottom: 48px;
     }
   }
 
@@ -1156,7 +1167,7 @@
 
     &::before {
       top: -240px;
-      right: -28px;
+      right: -30px;
       left: auto;
       height: 266px;
       width: 3px;
@@ -1168,8 +1179,8 @@
     padding: 0;
 
     &::before {
-      top: 17px;
-      right: -34px;
+      top: 18px;
+      right: -36px;
       left: auto;
       width: 15px;
       height: 15px;
@@ -1193,7 +1204,8 @@
 
   .step__activity-textarea {
     height: 142px;
-    padding: 17px 31px 18px 19px;
+    margin-left: 2px;
+    padding: 15px 31px 18px 17px;
     font-size: 20px;
     line-height: 24px;
   }
