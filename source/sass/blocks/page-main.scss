@@ -9,6 +9,10 @@
     flex-direction: column;
     background-color: #edeff6;
   }
+
+  &--no-js {
+    padding-top: 0;
+  }
 }
 
 .page-main__heading {
@@ -220,6 +224,10 @@
 
     &--inner {
       background-color: #edeff6;
+    }
+
+    &--no-js {
+      padding-top: 0;
     }
   }
 
