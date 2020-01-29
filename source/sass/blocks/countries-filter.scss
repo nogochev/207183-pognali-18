@@ -89,6 +89,14 @@
   background: transparent;
   border: 0;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .countries-filter__button-text {

@@ -49,11 +49,11 @@
     color: rgba(255, 189, 48, 0.3);
   }
 
-  &--support:hover path {
+  &--support:hover .contacts-list__svg {
     fill: #ffbd30;
   }
 
-  &--support:active path {
+  &--support:active .contacts-list__svg {
     fill: #ffbd30;
     fill-opacity: 0.3;
   }
