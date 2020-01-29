@@ -158,6 +158,21 @@
       background-color: #182044;
     }
 
+    &--no-js {
+      position: static;
+
+      .page-header__logo {
+        background: url("../../img/logo-tablet-blue@1x.png") no-repeat 0 0;
+        background-size: 166px 42px;
+
+        @media (min-resolution: 1.5dppx) {
+          .page-header__logo {
+            background-image: url("../img/logo-tablet-blue@2x.png");
+          }
+        }
+      }
+    }
+
     &--scrolled {
       background-color: #ffffff;
 
@@ -248,7 +263,7 @@
     order: 4;
     width: 688px;
     min-height: 213px;
-    margin-top: 94px;
+    margin-top: 88px;
     padding-left: 57px;
   }
 
@@ -266,7 +281,7 @@
     order: 5;
     width: 688px;
     min-height: 132px;
-    margin-top: 128px;
+    margin-top: 130px;
     padding-top: 25px;
     padding-left: 148px;
   }
@@ -278,7 +293,7 @@
     flex-wrap: wrap;
     width: 688px;
     min-height: 45px;
-    margin-top: 94px;
+    margin-top: 97px;
     margin-bottom: 74px;
     padding-left: 60px;
   }
@@ -309,6 +324,17 @@
 
     &--no-js {
       position: absolute;
+
+      .page-header__logo {
+        background: url("../../img/logo-desktop-white@1x.png") no-repeat 0 0;
+        background-size: 200px 52px;
+
+        @media (min-resolution: 1.5dppx) {
+          .page-header__logo {
+            background-image: url("../img/logo-desktop-white@2x.png");
+          }
+        }
+      }
     }
 
     &--scrolled {
