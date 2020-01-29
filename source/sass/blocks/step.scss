@@ -143,6 +143,7 @@
   margin-bottom: 2px;
   padding: 0 31px 0 33px;
   letter-spacing: 0.2px;
+  color: #1d2e5b;
   background: none;
   border: none;
 
@@ -632,17 +633,18 @@
   width: 21px;
   height: 21px;
   padding: 0;
-  background-image: url("../img/menu-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 9px 9px;
-  background-color: #edeff6;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 
   &--inactive {
     display: none;
   }
+}
+
+.step__country-del-icon {
+  fill: #606161;
+  fill-opacity: 0.5;
 }
 
 .step__add-country {
@@ -1138,7 +1140,7 @@
     margin-right: -6px;
     background-color: transparent;
     background-size: contain;
-    opacity: 0.1;
+    opacity: 0.2;
 
     &:hover,
     &:focus {
@@ -1148,6 +1150,12 @@
     &:active {
       opacity: 0.05;
     }
+  }
+
+  .step__country-del-icon {
+    width: 18px;
+    height: 18px;
+    fill-opacity: 1;
   }
 
   .step__activity {
