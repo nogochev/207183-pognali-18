@@ -1,5 +1,5 @@
 .plan-item {
-  padding: 24px 23px 21px;
+  padding: 23px 24px 21px;
   background-color: #ffffff;
   border-radius: 10px;
 }
@@ -22,7 +22,7 @@
 }
 
 .plan-item__container {
-  padding-left: 2px;
+  padding-left: 1px;
 }
 
 .plan-item__description {
@@ -64,7 +64,7 @@
 @media (min-width: $tablet-width) {
   .plan-item {
     position: relative;
-    padding: 27px 27px 16px 30px;
+    padding: 25px 27px 18px 32px;
 
     &::before {
       content: "";
@@ -83,7 +83,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 41px;
-    padding-left: 6px;
+    padding-left: 4px;
     font-weight: 700;
     font-size: 24px;
     line-height: 50px;
@@ -91,6 +91,8 @@
   }
 
   .plan-item__number {
+    padding-top: 2px;
+    padding-right: 1px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -132,7 +134,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 34px 23px 38px;
+    padding: 22px 34px 25px 39px;
 
     &::before {
       display: none;
@@ -142,12 +144,12 @@
   .plan-item__title {
     flex-direction: row;
     justify-content: flex-start;
-    width: 619px;
+    width: 620px;
     margin-bottom: 0;
   }
 
   .plan-item__number {
-    margin-right: 30px;
+    margin-right: 32px;
   }
 
   .plan-item__container {

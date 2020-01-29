@@ -42,8 +42,8 @@
   align-items: center;
   width: 100px;
   height: 100px;
-  padding-top: 6px;
-  padding-left: 2px;
+  padding-top: 2px;
+  padding-left: 4px;
 }
 
 .profile__level-progress {
@@ -55,7 +55,7 @@
 
 .profile__level-number {
   position: relative;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
   font-weight: 700;
   font-size: 38px;
   line-height: 38px;
@@ -64,8 +64,8 @@
   &::after {
     content: "";
     position: absolute;
-    bottom: 3px;
-    left: -3px;
+    bottom: 1px;
+    left: -4px;
     width: 49px;
     height: 2px;
     background-color: #cbced9;
@@ -86,8 +86,10 @@
 .profile__upload-button {
   display: flex;
   align-items: center;
-  height: 40px;
-  padding-left: 74px;
+  min-height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 75px;
   letter-spacing: 0.2px;
   color: #1d2e5b;
   background-color: #dfe3f0;
@@ -110,7 +112,7 @@
 
 .profile__fieldset {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   &--transport {
     margin-bottom: 33px;
@@ -123,7 +125,7 @@
 .profile__fieldset-title {
   position: absolute;
   z-index: 10;
-  top: -8px;
+  top: -9px;
   left: 50%;
   margin: 0;
   padding: 0 17px;
@@ -147,7 +149,7 @@
 .profile__fieldset-textarea {
   width: 100%;
   height: 100%;
-  padding: 22px 24px 21px;
+  padding: 21px 25px 22px;
   font-family: "Blogger Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -177,6 +179,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   @include list-reset;
   margin: 0;
 }
@@ -219,12 +222,12 @@
   }
 }
 
-.profile__transport-item input:checked+.profile__transport-type svg {
+.profile__transport-item input:checked + .profile__transport-type svg {
   fill: #1d2e5b;
   opacity: 1;
 }
 
-.profile__transport-item input:focus+.profile__transport-type {
+.profile__transport-item input:focus + .profile__transport-type {
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
 }
 
@@ -263,13 +266,13 @@
   }
 
   .profile__level {
-    margin-left: -4px;
-    padding-top: 8px;
+    margin-left: -6px;
+    padding-top: 3px;
   }
 
   .profile__level-progress {
     top: 3px;
-    left: 4px;
+    left: 6px;
     width: 94px;
     height: 94px;
   }
@@ -281,26 +284,26 @@
   }
 
   .profile__upload-button {
-    padding: 10px 223px 8px 230px;
-    height: 60px;
+    padding: 14px 223px 16px 230px;
+    min-height: 60px;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 1.9px;
     border-radius: 10px;
   }
 
   .profile__fieldset {
     order: 4;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 1px;
 
     &--transport {
       order: 1;
       width: 308px;
       margin-top: -1px;
       margin-bottom: -97px;
-      margin-left: -1px;
+      margin-left: -2px;
       padding: 24px 25px 25px;
     }
   }
@@ -312,19 +315,19 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.7px;
 
     &--transport {
-      bottom: -11px;
+      bottom: -9px;
     }
 
     &--tags {
-      bottom: -6px;
+      bottom: -5px;
     }
   }
 
   .profile__fieldset-textarea {
-    padding: 34px 39px 10px;
+    padding: 32px 39px 12px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -340,7 +343,7 @@
 
 @media (min-width: $desktop-width) {
   .profile {
-    padding-bottom: 65px;
+    padding-bottom: 64px;
   }
 
   .profile__container {
@@ -388,13 +391,14 @@
   .profile__level {
     width: 94px;
     height: 94px;
+    margin-right: 1px;
     margin-bottom: 12px;
-    padding-top: 10px;
+    padding-top: 6px;
   }
 
   .profile__level-progress {
     top: 1px;
-    left: 1px;
+    left: 2px;
   }
 
   .profile__level-number {
@@ -410,14 +414,14 @@
     justify-content: flex-end;
     width: 100%;
     margin-top: -66px;
-    margin-bottom: 27px;
-    padding-right: 94px;
+    margin-bottom: 26px;
+    padding-right: 95px;
   }
 
   .profile__upload-button {
     width: 190px;
-    height: 47px;
-    padding: 12px 50px 8px 67px;
+    min-height: 30px;
+    padding: 9px 50px 9px 68px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
@@ -428,7 +432,6 @@
 
   .profile__fieldset {
     width: 730px;
-    // min-height: 94px;
     height: 94px;
 
     &--transport {
@@ -436,14 +439,21 @@
       width: 384px;
       height: auto;
       margin: 0;
+      margin-top: -1px;
     }
   }
 
   .profile__fieldset-title {
     &--tags {
-      bottom: -11px;
+      bottom: -9px;
       left: 22px;
       transform: none;
+      letter-spacing: 2.1px;
+    }
+
+    &--transport {
+      padding-right: 19px;
+      padding-left: 20px;
     }
   }
 

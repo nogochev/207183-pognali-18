@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 17px;
-  padding: 12px 0 10px;
+  padding: 10px 0 12px;
   border-top: 1px solid #cbced9;
   border-bottom: 1px solid #cbced9;
 }
@@ -104,7 +104,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 3px 0px 0 1px;
+  padding: 3px 0 0 1px;
   font-size: 14px;
   color: #444444;
   background-color: #edeff6;
@@ -173,16 +173,17 @@
 
 @media (min-width: $tablet-width) {
   .calendar__month-selection {
-    margin-bottom: 31px;
-    padding: 27px 17px 19px;
+    margin-bottom: 30px;
+    padding: 21px 16px 21px 17px;
   }
 
   .calendar__month-button {
     width: 19px;
-    height: 34px;
+    height: 43px;
   }
 
   .calendar__month-name {
+    margin-right: 2px;
     font-size: 36px;
     line-height: normal;
   }
@@ -244,7 +245,15 @@
 @media (min-width: $desktop-width) {
   .calendar__month-selection {
     margin-bottom: 0;
-    padding: 26px 0 20px;
+    padding: 21px 0 19px 0;
+  }
+
+  .calendar__month-button {
+    height: 45px;
+  }
+
+  .calendar__month-name {
+    margin-right: 0;
   }
 
   .calendar__day {

@@ -3,6 +3,7 @@ var filterButton = filter.querySelector(".countries-filter__button");
 var filterButtonText = filter.querySelector(".countries-filter__button-text");
 var filterContent = filter.querySelector(".countries-filter__body");
 var filterClose = filter.querySelector(".countries-filter__button-close");
+// var filterClose = filter.querySelector(".countries-filter__button-close");
 
 filterButton.addEventListener("click", function() {
   filterButton.classList.toggle("countries-filter__button--show");
@@ -23,3 +24,5 @@ window.addEventListener("keydown", function(event) {
     filterContent.classList.remove("countries-filter__body--show");
   }
 });
+
+filterContent.classList.remove("countries-filter__body--no-js");

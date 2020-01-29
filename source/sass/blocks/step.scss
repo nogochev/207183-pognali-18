@@ -1,6 +1,6 @@
 .step {
   background-color: #ffffff;
-  padding: 24px 25px 22px;
+  padding: 22px 25px 22px;
   border-radius: 10px;
 
   &--two {
@@ -16,13 +16,13 @@
   margin-bottom: 21px;
 
   &--entertainment {
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 }
 
 .step__title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   margin-left: -1px;
   font-weight: 700;
   font-size: 20px;
@@ -33,12 +33,14 @@
 .step__description {
   margin-top: 0;
   margin-bottom: 0;
+  padding-right: 5px;
   font-weight: 400;
   line-height: 22px;
 }
 
 .step__list {
   display: none;
+
   @include list-reset;
 }
 
@@ -84,7 +86,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   &--days {
     margin-bottom: 21px;
@@ -117,18 +119,18 @@
   display: flex;
   width: 230px;
   margin-left: -5px;
-  padding: 12px 24px 10px 46px;
+  padding: 11px 24px 11px 46px;
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: -0.5px;
   border: none;
 
   &--step-two {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
   }
 
   &--step-three {
-    margin-bottom: 13px;
+    margin-bottom: 11px;
     padding-left: 70px;
     padding-right: 70px;
   }
@@ -138,7 +140,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 0;
+  margin-bottom: 2px;
+  padding: 0 31px 0 33px;
+  letter-spacing: 0.2px;
   background: none;
   border: none;
 
@@ -154,7 +158,7 @@
 }
 
 .step__label {
-  margin-bottom: 8px;
+  margin-bottom: 9px;
   margin-left: -1px;
   font-weight: 500;
   line-height: 16px;
@@ -192,6 +196,7 @@
   background-repeat: no-repeat;
   border: none;
   opacity: 0.3;
+  cursor: pointer;
 
   &--reduce {
     left: -1px;
@@ -218,7 +223,7 @@
 .step__number-input {
   display: flex;
   width: 100%;
-  padding: 15px 14px 10px 17px;
+  padding: 12px 14px 11px 17px;
   font-family: inherit;
   font-weight: 500;
   font-size: 15px;
@@ -252,7 +257,7 @@
   display: flex;
   align-items: center;
   height: 25px;
-  padding-top: 5px;
+  padding-top: 2px;
   padding-left: 39px;
   font-weight: 400;
   font-size: 15px;
@@ -315,7 +320,7 @@
 }
 
 .step__country-choice {
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 }
 
 .step__country-wrapper {
@@ -562,6 +567,7 @@
   z-index: 20;
   width: 35px;
   height: 24px;
+  padding-top: 1px;
   font-size: 0;
   background-color: transparent;
   border-radius: 6.4px;
@@ -655,10 +661,10 @@
 .step__activity-country {
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   &:last-child {
-    margin-bottom: 22px;
+    margin-bottom: 23px;
   }
 }
 
@@ -687,7 +693,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 9px;
+    top: 10px;
     left: -3px;
     width: 6px;
     height: 6px;
@@ -700,7 +706,7 @@
     position: absolute;
     width: 13px;
     height: 2px;
-    top: 11px;
+    top: 12px;
     left: -14px;
     background-color: #1d2e5b;
     border-radius: 1px;
@@ -732,6 +738,7 @@
   position: relative;
   z-index: 1;
   height: 220px;
+  padding-top: 1px;
 }
 
 .step__activity-textarea {
@@ -739,7 +746,7 @@
   z-index: 90;
   width: 100%;
   height: 220px;
-  padding: 9px 13px 9px 13px;
+  padding: 8px 13px 9px 14px;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
@@ -792,17 +799,19 @@
 
 @media (min-width: $tablet-width) {
   .step {
-    padding: 48px 43px 55px 43px;
+    padding: 45px 43px 55px 43px;
     border-radius: 30px;
 
     &--two {
       margin-bottom: 51px;
-      padding-bottom: 40px;
+      padding-bottom: 42px;
+      padding-right: 46px;
     }
 
     &--three {
       margin-bottom: 52px;
-      padding-bottom: 39px;
+      padding-bottom: 41px;
+      padding-right: 46px;
     }
   }
 
@@ -811,16 +820,16 @@
 
     &--route {
       max-width: 406px;
-      margin-bottom: 33px;
+      margin-bottom: 35px;
     }
 
     &--entertainment {
-      margin-bottom: 33px;
+      margin-bottom: 35px;
     }
   }
 
   .step__title {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
     margin-left: 0;
     font-size: 36px;
     line-height: 36px;
@@ -829,6 +838,7 @@
 
   .step__description {
     max-width: 500px;
+    padding-right: 0;
     font-size: 20px;
     line-height: 24px;
   }
@@ -845,7 +855,7 @@
 
     &--days {
       order: 2;
-      margin-top: 53px;
+      margin-top: 51px;
       margin-bottom: 59px;
     }
 
@@ -857,7 +867,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: -26px;
+      top: -24px;
       left: 0;
       width: 100%;
       height: 1px;
@@ -885,8 +895,8 @@
 
   .step__button-next {
     width: auto;
-    margin-left: 0;
-    padding: 30px 77px 27px 34px;
+    margin-left: 1px;
+    padding: 28px 78px 29px 33px;
     font-size: 24px;
     line-height: 24px;
     letter-spacing: normal;
@@ -894,11 +904,13 @@
     border-radius: 20px;
 
     &--step-two {
+      margin-left: 0;
       padding-left: 33px;
     }
 
     &--step-three {
-      padding-right: 138px;
+      margin-left: 0;
+      padding-right: 139px;
     }
   }
 
@@ -906,9 +918,11 @@
     position: relative;
     justify-content: flex-end;
     width: 181px;
+    margin-right: -4px;
     padding: 0;
     font-size: 24px;
     text-transform: none;
+    letter-spacing: normal;
   }
 
   .button__arrow {
@@ -916,16 +930,16 @@
   }
 
   .step__label {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     margin-left: -1px;
     font-size: 20px;
     line-height: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.9px;
   }
 
   .step__label-essence {
     margin-right: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 20px;
     line-height: 18px;
     letter-spacing: 2px;
@@ -948,18 +962,19 @@
   }
 
   .step__number-input {
-    padding: 24px 14px 22px 17px;
+    padding: 21px 14px 23px 15px;
     font-size: 20px;
     line-height: 18px;
   }
 
   .step__children-checkbox {
     height: 36px;
+    padding-top: 0;
     padding-left: 59px;
     font-weight: 500;
     font-size: 20px;
     line-height: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1.9px;
     text-transform: uppercase;
     color: #1d2e5b;
 
@@ -979,22 +994,22 @@
   }
 
   .step__calendar {
-    margin-bottom: 46px;
+    margin-bottom: 47px;
   }
 
   .step__country-choice {
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 42px;
-    padding-bottom: 49px;
+    padding-top: 41px;
+    padding-bottom: 50px;
     border-top: 1px solid #d6d9e6;
 
     &::after {
       content: "";
       position: absolute;
       top: 0;
-      right: 137px;
+      right: 133px;
       width: 1px;
       height: 100%;
       background-color: #d6d9e6;
@@ -1017,13 +1032,14 @@
 
   .step__country-select {
     width: 369px;
-    padding: 27px 27px 23px;
+    padding: 25px 27px 25px 26px;
     font-size: 20px;
     line-height: 18px;
-    letter-spacing: 2;
+    letter-spacing: 1.8px;
+    cursor: pointer;
 
     &--selected::before {
-      top: 29px;
+      top: 30px;
       right: 26px;
       width: 17px;
       height: 9px;
@@ -1038,8 +1054,8 @@
 
     &--choose {
       &::before {
-        top: 27px;
-        right: -34px;
+        top: 25px;
+        right: -35px;
         width: 15px;
         height: 15px;
         background-color: #ffffff;
@@ -1047,7 +1063,7 @@
 
       &::after {
         top: 30px;
-        right: 27px;
+        right: 26px;
         width: 17px;
         height: 9px;
       }
@@ -1055,7 +1071,7 @@
 
     &--add {
       &::before {
-        top: 27px;
+        top: 25px;
         right: -34px;
         z-index: 10;
         width: 15px;
@@ -1093,7 +1109,7 @@
 
   .step__flag-wrapper {
     width: auto;
-    padding-left: 32px;
+    padding-left: 34px;
     border: none;
 
     &::before {
@@ -1108,7 +1124,7 @@
     &--big {
       width: 70px;
       height: 47px;
-      padding-top: 0;
+      padding-top: 1px;
     }
   }
 
@@ -1119,6 +1135,7 @@
     width: 22px;
     height: 22px;
     margin-bottom: 3px;
+    margin-right: -6px;
     background-color: transparent;
     background-size: contain;
     opacity: 0.1;
@@ -1134,8 +1151,8 @@
   }
 
   .step__activity {
-    padding-top: 27px;
-    padding-right: 31px;
+    padding-top: 26px;
+    padding-right: 30px;
     border-top: 1px solid #d6d9e6;
   }
 
@@ -1143,7 +1160,7 @@
     margin-bottom: 43px;
 
     &:last-child {
-      margin-bottom: 47px;
+      margin-bottom: 48px;
     }
   }
 
@@ -1152,7 +1169,7 @@
 
     &::before {
       top: -240px;
-      right: -28px;
+      right: -30px;
       left: auto;
       height: 266px;
       width: 3px;
@@ -1164,8 +1181,8 @@
     padding: 0;
 
     &::before {
-      top: 17px;
-      right: -34px;
+      top: 18px;
+      right: -36px;
       left: auto;
       width: 15px;
       height: 15px;
@@ -1189,7 +1206,8 @@
 
   .step__activity-textarea {
     height: 142px;
-    padding: 17px 31px 18px 19px;
+    margin-left: 2px;
+    padding: 15px 31px 18px 17px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -1204,17 +1222,17 @@
 
 @media (min-width: $desktop-width) {
   .step {
-    padding: 92px 160px 105px;
+    padding: 89px 160px 105px;
     border-radius: 60px;
 
     &--two {
       margin-bottom: 45px;
-      padding-bottom: 92px;
+      padding-bottom: 94px;
     }
 
     &--three {
       margin-bottom: 46px;
-      padding-bottom: 92px;
+      padding-bottom: 94px;
     }
   }
 
@@ -1222,11 +1240,11 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 54px;
+    margin-bottom: 56px;
 
     &--route {
       max-width: 100%;
-      margin-bottom: 53px;
+      margin-bottom: 56px;
     }
   }
 
@@ -1239,9 +1257,9 @@
   }
 
   .step__title {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
     line-height: 50px;
-    letter-spacing: normal;
+    letter-spacing: -0.2px;
 
     br {
       display: none;
@@ -1256,8 +1274,13 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding-top: 19px;
+    padding-top: 21px;
     padding-right: 45px;
+  }
+
+  .step__item::before {
+    top: 5px;
+    left: 1px;
   }
 
   .step__text {
@@ -1272,7 +1295,7 @@
   .step__form {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-bottom: 71px;
+    margin-bottom: 69px;
     padding-top: 30px;
     border-top: 1px solid #d6d9e6;
   }
@@ -1296,7 +1319,7 @@
   .step__input-wrapper {
     justify-content: flex-end;
     min-width: 50%;
-    margin-bottom: -39px;
+    margin-bottom: -36px;
   }
 
   .step__button-next,
@@ -1307,7 +1330,7 @@
   }
 
   .step__button-prev {
-    padding-right: 2px;
+    padding-right: 7px;
   }
 
   .step__label {
@@ -1322,7 +1345,7 @@
 
   .step__selection {
     width: 181px;
-    margin-right: 36px;
+    margin-right: 37px;
   }
 
   .step__select-number {
@@ -1331,6 +1354,10 @@
 
     &--increase {
       right: 0;
+    }
+
+    &--reduce {
+      left: 0;
     }
   }
 
@@ -1341,13 +1368,13 @@
 
   .step__children-checkbox {
     &::before {
-      top: 0;
-      left: 2px;
+      top: 1px;
+      left: 1px;
     }
 
     &::after {
-      top: 12px;
-      left: 15px;
+      top: 13px;
+      left: 14px;
     }
   }
 
@@ -1355,12 +1382,20 @@
     margin-bottom: 56px;
   }
 
+  .step__button-next {
+    margin-left: 0;
+
+    &--step-three {
+      padding-right: 140px;
+    }
+  }
+
   .step__country-choice {
-    padding-top: 63px;
+    padding-top: 62px;
     padding-bottom: 57px;
 
     &::after {
-      right: 226px;
+      right: 225px;
       height: 525px;
     }
   }
@@ -1370,13 +1405,13 @@
 
     &--choose {
       &::before {
-        right: -51px;
+        right: -53px;
       }
     }
 
     &--add {
       &::before {
-        right: -51px;
+        right: -52px;
       }
 
       &::after {
@@ -1391,24 +1426,35 @@
   }
 
   .step__flag-wrapper {
-    padding-right: 7px;
+    padding-right: 3px;
     padding-left: 0;
 
     &::before {
-      left: -49px;
+      left: -48px;
     }
   }
 
   .step__flag-country {
     &--big {
-      padding-top: 2px;
+      padding-top: 1px;
     }
   }
 
+  .step__country-del {
+    margin-bottom: 2px;
+    margin-right: 4px;
+  }
+
   .step__activity {
-    margin-bottom: 10px;
-    padding-top: 71px;
+    margin-bottom: 11px;
+    padding-top: 70px;
     padding-right: 0;
+
+    .step__flag-country {
+      &--big {
+        padding-top: 4px;
+      }
+    }
   }
 
   .step__activity-country + .step__activity-country {
@@ -1430,6 +1476,8 @@
   }
 
   .step__activity-country-name {
+    letter-spacing: -0.2px;
+
     &::after {
       display: none;
     }
@@ -1441,6 +1489,7 @@
 
   .step__activity-textarea {
     width: 730px;
-    padding: 24px 10px 24px 25px;
+    margin-left: 0;
+    padding: 22px 10px 24px 25px;
   }
 }

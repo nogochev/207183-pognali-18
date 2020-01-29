@@ -11,7 +11,7 @@
   min-height: 1302px;
   margin: 0 auto;
   padding: 0 25px;
-  padding-top: 52px;
+  padding-top: 50px;
   padding-bottom: 30px;
   background: url("../../img/rogovaya-back-mobile@1x.png") no-repeat -10px 291px,
     url("../../img/smolov-back-desktop@1x.png") no-repeat 152px 19px;
@@ -44,14 +44,14 @@
   flex-direction: column;
   width: 270px;
   min-height: 154px;
-  margin-bottom: 51px;
+  margin-bottom: 52px;
   padding-right: 25px;
   padding-left: 23px;
 }
 
 .companions__title {
   margin: 0;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
@@ -78,6 +78,7 @@
 .companions__list {
   display: flex;
   flex-direction: column;
+
   @include list-reset;
   margin-bottom: 10px;
 }
@@ -125,8 +126,8 @@
   align-items: center;
   width: 58px;
   height: 58px;
-  padding-top: 6px;
-  color: #fff;
+  padding-top: 4px;
+  color: #ffffff;
   background-color: rgba(#000000, 0.6);
   border-radius: 50px;
 }
@@ -151,7 +152,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 22px;
+    top: 24px;
     left: -3px;
     width: 31px;
     height: 1px;
@@ -161,7 +162,7 @@
 }
 
 .companions__level {
-  padding-top: 1px;
+  padding-top: 2px;
   padding-right: 1px;
   font-weight: 400;
   font-size: 14px;
@@ -173,12 +174,11 @@
 }
 
 .companions__item:nth-of-type(2) .companions__level-count {
-  padding-top: 6px;
   padding-right: 3px;
 }
 
 .companions__item:nth-of-type(2) .companions__level {
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 .companions__countries {
@@ -187,9 +187,15 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   @include list-reset;
   margin-top: -12px;
   margin-bottom: -17px;
+}
+
+.companions__item:nth-of-type(2) .companions__countries {
+  margin-top: -12px;
+  margin-bottom: -16px;
 }
 
 .companions__country {
@@ -206,8 +212,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 157px;
-  padding-top: 26px;
+  min-height: 158px;
+  padding-top: 25px;
   background-color: #ffffff;
   border-radius: 0 0 10px 10px;
 }
@@ -215,7 +221,7 @@
 .companions__name {
   position: relative;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
@@ -229,13 +235,13 @@
     color: rgba(#1d2e5b, 0.7);
   }
 
-  &:hover {
+  &:active {
     color: rgba(#1d2e5b, 0.3);
   }
 }
 
 .companions__online-status {
-  top: 7px;
+  top: 9px;
   left: -16px;
 }
 
@@ -253,7 +259,7 @@
 }
 
 .companions__item:nth-of-type(2) .companions__tags {
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   padding-left: 48px;
 }
 
@@ -273,7 +279,6 @@
   margin-right: 6px;
   margin-left: 6px;
   font-size: 0;
-  cursor: pointer;
 
   &::before,
   &::after {
@@ -318,7 +323,7 @@
 }
 
 .companions__button {
-  padding-right: 130px;
+  padding: 22px 130px 22px 23px;
 
   .button__arrow {
     top: 24px;
@@ -335,9 +340,9 @@
     width: $tablet-width;
     min-height: 1234px;
     padding: 0 40px;
-    padding-top: 121px;
-    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat 408px
-        60px,
+    padding-top: 117px;
+    background:
+      url("../../img/rogovaya-back-desktop@1x.png") no-repeat 408px 60px,
       url("../../img/smolov-back-desktop@1x.png") no-repeat 40px 406px;
     background-size: 285px 285px, 143px 143px;
 
@@ -359,19 +364,19 @@
   .companions__wrapper-text {
     width: 510px;
     min-height: 341px;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
     padding-left: 33px;
   }
 
   .companions__title {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     font-size: 45px;
     line-height: 45px;
     letter-spacing: -0.3px;
   }
 
   .companions__text {
-    margin-bottom: 18px;
+    margin-bottom: 19px;
     padding-left: 2px;
     font-size: 28px;
     line-height: 33px;
@@ -402,6 +407,11 @@
     background-color: transparent;
   }
 
+  .companions__item:nth-of-type(2) .companions__countries {
+    margin-top: -12px;
+    margin-bottom: -17px;
+  }
+
   .companions__picture {
     &:hover {
       border-radius: 20px 20px 0 0;
@@ -420,7 +430,7 @@
   }
 
   .companions__item:nth-of-type(2) .companions__level-progress {
-    left: 0px;
+    left: 0;
   }
 
   .companions__item:nth-of-type(2) .companions__level-count {
@@ -428,8 +438,8 @@
   }
 
   .companions__info-wrapper {
-    min-height: 198px;
-    padding-top: 31px;
+    min-height: 199px;
+    padding-top: 30px;
     border-radius: 0 0 20px 20px;
   }
 
@@ -440,7 +450,7 @@
   }
 
   .companions__online-status {
-    top: 8px;
+    top: 10px;
     left: -22px;
     width: 7px;
     height: 7px;
@@ -454,7 +464,7 @@
   }
 
   .companions__item:nth-of-type(2) .companions__tags {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     padding-left: 23px;
   }
 
@@ -467,7 +477,7 @@
     align-self: stretch;
     margin: 0 35px;
     margin-bottom: 20px;
-    padding: 30px 134px 27px 33px;
+    padding: 28px 134px 29px 33px;
     font-size: 24px;
     line-height: 24px;
     border-radius: 20px;
@@ -489,13 +499,13 @@
     padding: 0 60px;
     padding-top: 129px;
     padding-bottom: 60px;
-    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat 191px
-        385px,
-      url("../../img/smolov-back-desktop@1x.png") no-repeat 547px 133px;
+    background:
+      url("../../img/rogovaya-back-desktop@1x.png") no-repeat 191px 389px,
+      url("../../img/smolov-back-desktop@1x.png") no-repeat 547px 137px;
     background-size: 285px 285px, 143px 143px;
 
     &::before {
-      top: 68px;
+      top: 72px;
       left: 60px;
     }
   }
@@ -520,7 +530,7 @@
     align-self: flex-start;
     width: 630px;
     margin: 0;
-    margin-top: 4px;
+    margin-top: 8px;
   }
 
   .companions__level-count {
@@ -547,7 +557,7 @@
   }
 
   .companions__info-wrapper {
-    padding-top: 33px;
+    padding-top: 32px;
   }
 
   .companions__name {
@@ -556,6 +566,13 @@
 
   .companions__online-status {
     left: -21px;
+  }
+
+  .companions__tags {
+    margin-bottom: 26px;
+    padding: 0 23px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .companions__button {

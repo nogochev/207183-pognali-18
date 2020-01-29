@@ -77,9 +77,9 @@
   position: relative;
   display: block;
   width: 90px;
-  margin-top: -70px;
+  margin-top: -72px;
   margin-bottom: 45px;
-  margin-left: 85px;
+  margin-left: 84px;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -98,14 +98,14 @@
 .companions-card__online-status {
   width: 6px;
   height: 6px;
-  top: 8px;
-  left: 137px;
+  top: 10px;
+  left: 138px;
 }
 
 .companions-card__tags {
   width: 175px;
   margin: 0;
-  padding-left: 6px;
+  padding-left: 5px;
   font-weight: normal;
   font-size: 15px;
   line-height: 18px;
@@ -124,7 +124,7 @@
 .companions-card__titles {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .companions-card__title {
@@ -137,13 +137,13 @@
   color: #444444;
 
   &--transport {
-    padding-left: 7px;
+    padding-left: 6px;
 
     &::before,
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
+      top: 10px;
       height: 1px;
       background-color: #edeff6;
     }
@@ -160,12 +160,12 @@
   }
 
   &--level {
-    padding-right: 2px;
+    padding-right: 3px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 8px;
+      top: 10px;
       right: -20px;
       width: 11px;
       height: 1px;
@@ -177,13 +177,13 @@
     position: relative;
     z-index: 10;
     margin-bottom: 14px;
-    padding-left: 2px;
+    padding-left: 1px;
 
     &::before,
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
+      top: 10px;
       height: 1px;
       background-color: #edeff6;
     }
@@ -227,8 +227,9 @@
   position: relative;
   width: 26px;
   height: 18px;
+  margin-top: 1px;
   margin-right: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   &::before,
   &::after {
@@ -283,6 +284,7 @@
 .companions-card__transport-list {
   position: relative;
   display: flex;
+
   @include list-reset;
   padding-left: 4px;
 }
@@ -369,7 +371,7 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  margin-top: 5px;
+  margin-top: 1px;
   padding-right: 9px;
   font-weight: 700;
   font-size: 24px;
@@ -379,7 +381,7 @@
 
 .companions-card__level-progress {
   position: absolute;
-  top: -18px;
+  top: -16px;
   left: -10px;
   transform: rotate(-90deg);
 }
@@ -395,7 +397,7 @@
 .companions-card__button-call {
   width: 100%;
   margin-top: 20px;
-  padding: 7px 78px 3px 78px;
+  padding: 5px 78px;
   letter-spacing: 0.2px;
 }
 
@@ -530,8 +532,8 @@
     height: 190px;
     margin-top: 2px;
     margin-right: 33px;
-    margin-left: 0px;
-    border-radius: 20px;
+    margin-left: 0;
+    border-radius: 18px;
   }
 
   .companions-card__user-photo {
@@ -544,7 +546,7 @@
     width: 300px;
     margin: 0;
     margin-bottom: 23px;
-    padding-top: 5px;
+    padding-top: 3px;
     font-size: 30px;
   }
 
@@ -567,7 +569,7 @@
   .companions-card__desired-countries {
     order: 50;
     min-height: auto;
-    margin-top: 22px;
+    margin-top: 20px;
     margin-bottom: 0;
     padding-left: 0;
   }
@@ -583,7 +585,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 8px;
+      top: 10px;
       left: -35px;
       width: 71px;
       height: 1px;
@@ -593,7 +595,7 @@
     &::after {
       content: "";
       position: absolute;
-      top: 8px;
+      top: 10px;
       right: -25px;
       width: 499px;
       height: 1px;
@@ -604,12 +606,13 @@
   .companions-card__countries-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 1px;
   }
 
   .companions-card__countries-item {
     margin-right: 28px;
     margin-bottom: 0;
-    margin-left: 1px;
+    margin-left: 0;
 
     &:last-child {
       margin-right: 0;
@@ -685,19 +688,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
+    margin-top: -2px;
     padding-bottom: 4px;
   }
 
   .companions-card__level-progress {
-    top: -20px;
+    top: -18px;
     left: -14px;
     width: 63px;
     height: 63px;
   }
 
   .companions-card__count {
-    margin-bottom: 1px;
+    margin-bottom: 3px;
   }
 
   .companions-card__level {
@@ -748,7 +751,7 @@
     width: 148px;
     margin: 0;
     margin-left: 0;
-    padding: 12px 32px 8px 30px;
+    padding: 10px 32px 10px 30px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -770,6 +773,7 @@
     height: 285px;
     margin-top: 0;
     margin-right: 59px;
+    border-radius: 20px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
@@ -790,7 +794,7 @@
 
   .companions-card__desired-countries {
     width: auto;
-    margin-top: 0;
+    margin-top: -1px;
     margin-bottom: 50px;
     padding-top: 49px;
     padding-bottom: 50px;
@@ -806,7 +810,7 @@
 
   .companions-card__countries-item {
     margin-right: 0;
-    margin-bottom: 13px;
+    margin-bottom: 11px;
   }
 
   .companions-card__flag {
@@ -815,6 +819,13 @@
 
   .companions-card__country-name {
     margin-top: 5px;
+  }
+
+  .companions-card__online-status,
+  .companions-card:nth-child(2) .companions-card__online-status,
+  .companions-card:nth-child(3) .companions-card__online-status,
+  .companions-card:nth-child(4) .companions-card__online-status {
+    left: -25px;
   }
 
   .companions-card__transport-and-level {
@@ -837,7 +848,7 @@
   }
 
   .companions-card__level-count {
-    margin-top: 4px;
+    margin-top: 2px;
     margin-right: 5px;
     margin-bottom: -3px;
     margin-left: 3px;
@@ -848,7 +859,7 @@
   }
 
   .companions-card__count {
-    margin-bottom: 1px;
+    margin-bottom: 3px;
     padding-right: 0;
   }
 

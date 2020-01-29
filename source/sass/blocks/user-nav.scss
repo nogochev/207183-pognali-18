@@ -8,6 +8,7 @@
 
 .user-nav__list {
   display: flex;
+
   @include list-reset;
 }
 
@@ -59,7 +60,7 @@
     height: 20px;
     background-color: transparent;
     background-repeat: no-repeat;
-    border-radius: 0px;
+    border-radius: 0;
   }
 
   &--tel::before {
@@ -70,12 +71,12 @@
 
   &--mail::before {
     background-image: url("../../img/topmenu-mail.svg");
-    background-position: 0px 2px;
+    background-position: 0 2px;
     background-size: 18px 14px;
   }
 }
 
 .user-nav__login {
-  padding: 7px 39px 3px 37px;
+  padding: 5px 39px 5px 37px;
   letter-spacing: 0.2px;
 }
